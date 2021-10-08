@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "comment": "/components/comment",
+    "footer-comment": "/components/footer-comment",
+    "input-comment": "/components/input-comment"
+  }
+}

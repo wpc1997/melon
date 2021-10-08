@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "area-grid": "/pages/index/components/area-grid",
+    "panel": "/components/panel",
+    "hot-cards": "/pages/index/components/hot-cards",
+    "dynamic": "/components/dynamic",
+    "recommend-search": "/pages/index/components/recommed-search"
+  }
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.animate-popup.data-v-b4e13b9a {
+  bottom: 0rpx !important;
+}
+.content.data-v-b4e13b9a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.content-popup.data-v-b4e13b9a {
+  position: fixed;
+  width: 100vw;
+  bottom: -700rpx;
+  height: 700rpx;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  background-color: #FFFFFF;
+  border-top-right-radius: 12rpx;
+  border-top-left-radius: 12rpx;
+}
+.content-popup > view.data-v-b4e13b9a:first-child {
+  height: 150rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.content-popup-list.data-v-b4e13b9a {
+  margin-top: 24rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content-popup-list > view.data-v-b4e13b9a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.content-popup-list > view > image.data-v-b4e13b9a {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.content-popup-list > view > text.data-v-b4e13b9a {
+  margin-top: 24rpx;
+}
+.content-popup-list > view.data-v-b4e13b9a:nth-of-type(2) {
+  -webkit-box-flex: 1.8;
+  -webkit-flex: 1.8;
+          flex: 1.8;
+}
+.content-list > view.data-v-b4e13b9a {
+  margin-top: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content-list > view image.data-v-b4e13b9a {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.content-list > view > view.data-v-b4e13b9a {
+  margin-left: 24rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.content-list > view > view > text.data-v-b4e13b9a:first-child {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.content-list > view > view > text.data-v-b4e13b9a:last-child {
+  margin-top: 16rpx;
+  color: #888888;
+}
+.content-close.data-v-b4e13b9a {
+  position: absolute;
+  bottom: 100rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 16rpx;
+}
+.content-close text.data-v-b4e13b9a {
+  color: #333333;
+  font-weight: bolder;
+}
+.content.active.data-v-b4e13b9a {
+  opacity: 1;
+}
+.content .logo.data-v-b4e13b9a {
+  position: relative;
+  margin-top: -400rpx;
+  width: 200rpx;
+  height: 200rpx;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.content .logo.active.data-v-b4e13b9a {
+  opacity: 1;
+}
+.tabbar-box-wrap.data-v-b4e13b9a {
+  position: absolute;
+  width: 100%;
+  padding: 50rpx;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+}
+.tabbar-box-wrap .tabbar-box.data-v-b4e13b9a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 15rpx 20rpx;
+  box-sizing: border-box;
+  z-index: 2;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.tabbar-box-wrap .tabbar-box.data-v-b4e13b9a:after {
+  content: '';
+  position: absolute;
+  bottom: -16rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50rpx;
+  height: 50rpx;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #fff;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.tabbar-box-wrap .tabbar-box.data-v-b4e13b9a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 20rpx;
+  z-index: 2;
+}
+.tabbar-box-wrap .tabbar-box .tabbar-box-item.data-v-b4e13b9a {
+  width: 100%;
+  z-index: 3;
+  margin: 10rpx;
+  color: #555555;
+  text-align: center;
+  font-size: 28rpx;
+}
+.tabbar-box-wrap .tabbar-box .tabbar-box-item .box-image.data-v-b4e13b9a {
+  width: 100%;
+  height: 80rpx;
+}
+

@@ -1,0 +1,1 @@
+<view class="groups data-v-1905b960"><cu-custom vue-id="07b1f3a6-1" bgColor="bg-gradual-white" isBack="{{true}}" class="data-v-1905b960" bind:__l="__l" vue-slots="{{['content']}}"><view slot="content" class="data-v-1905b960">{{title}}</view></cu-custom><view class="data-v-1905b960"><group vue-id="07b1f3a6-2" class="data-v-1905b960" bind:__l="__l"></group></view></view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hot-cards": "/pages/index/components/hot-cards",
+    "panel": "/components/panel"
+  }
+}

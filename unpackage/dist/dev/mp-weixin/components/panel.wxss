@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.panel.data-v-3570f3d9 {
+  padding: 24rpx;
+  background-color: #FFFFFF;
+  border-bottom: 20rpx solid #f6f7f9;
+}
+.panel-from.data-v-3570f3d9 {
+  color: #888888;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  padding-bottom: 24rpx;
+}
+.panel-from text.data-v-3570f3d9 {
+  margin-left: 12rpx;
+}
+.panel-top.data-v-3570f3d9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.panel-top-title.data-v-3570f3d9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+}
+.panel-top-title > view.data-v-3570f3d9:nth-of-type(1) {
+  line-height: 42rpx;
+  margin-left: 8rpx;
+  font-weight: 500;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.panel-top-title > view:nth-of-type(1) .tag.data-v-3570f3d9 {
+  border-radius: 6rpx;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  background-color: #FFF0EB;
+  color: #FC5609;
+  max-height: 42rpx;
+  min-height: 42rpx;
+  height: 42rpx;
+  padding: 0 12rpx;
+  margin-right: 12rpx;
+  line-height: 42rpx;
+}
+.panel-top-title > text.data-v-3570f3d9 {
+  margin-top: 12rpx;
+  color: #888888;
+  line-height: 36rpx;
+}
+.panel-top-image.data-v-3570f3d9 {
+  padding: 0 0 0 24rpx;
+}
+.panel-top-image image.data-v-3570f3d9 {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 24rpx;
+}
+.panel-bottom.data-v-3570f3d9 {
+  padding-top: 24rpx;
+  padding-bottom: 12rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.panel-bottom-user.data-v-3570f3d9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.panel-bottom-user image.data-v-3570f3d9 {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+}
+.panel-bottom-user text.data-v-3570f3d9 {
+  margin-left: 10rpx;
+  color: #888888;
+}
+.panel-bottom-other.data-v-3570f3d9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  margin-left: auto;
+}
+.panel-bottom-other text.data-v-3570f3d9 {
+  color: #888888;
+}
+.panel-bottom-other text.data-v-3570f3d9:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-right: 24rpx;
+  margin-left: 8rpx;
+}
+.panel-bottom-other text.data-v-3570f3d9:nth-of-type(4) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: 8rpx;
+}
+

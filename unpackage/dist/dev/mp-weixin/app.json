@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/channel/index",
+    "pages/channel/channel-room",
+    "pages/channel/channel-list",
+    "pages/issue/index",
+    "pages/issue/issue-dynamic",
+    "pages/issue/create-group",
+    "pages/chat/index",
+    "pages/mine/index",
+    "pages/mine/mine-panel",
+    "pages/mine/about-me",
+    "pages/mine/input-info",
+    "pages/chat/chat",
+    "view/unused-detail",
+    "view/city",
+    "view/university",
+    "view/contribute",
+    "view/fans",
+    "view/collection",
+    "view/focusOn",
+    "view/iRelat",
+    "view/login",
+    "view/register",
+    "view/reset",
+    "view/groups"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "color": "#8F8F94",
+    "selectedColor": "#f33e54",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/homeactive.png",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/channel/index",
+        "iconPath": "static/img/tabbar/guanzhu.png",
+        "selectedIconPath": "static/img/tabbar/guanzhuactive.png",
+        "text": "频道"
+      },
+      {
+        "pagePath": "pages/issue/index",
+        "iconPath": "static/img/tabbar/add.png",
+        "selectedIconPath": "static/img/tabbar/addactive.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "static/img/tabbar/news.png",
+        "selectedIconPath": "static/img/tabbar/newsactive.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/img/tabbar/me.png",
+        "selectedIconPath": "static/img/tabbar/meactive.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取位置用来设置自己的长居地"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "cu-custom-header": "/colorui/components/cu-custom-header",
+    "cu-custom-foot": "/colorui/components/cu-custom-foot",
+    "cu-custom-title": "/colorui/components/cu-custom-title"
+  },
+  "sitemapLocation": "sitemap.json"
+}

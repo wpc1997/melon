@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.dynamic.data-v-fbdd4d58 {
+  padding: 24rpx;
+  background-color: #FFFFFF;
+  border-bottom: 20rpx solid #f6f7f9;
+}
+.dynamic-user.data-v-fbdd4d58 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.dynamic-user-avatar image.avatar.data-v-fbdd4d58 {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.dynamic-user-name.data-v-fbdd4d58 {
+  margin-left: 14rpx;
+}
+.dynamic-user-name .name > text.data-v-fbdd4d58:nth-of-type(1) {
+  color: #222222;
+}
+.dynamic-user-name .time > text.data-v-fbdd4d58:nth-of-type(1) {
+  color: #888888;
+}
+.dynamic-info.data-v-fbdd4d58 {
+  margin-top: 24rpx;
+}
+.dynamic-info-title.data-v-fbdd4d58 {
+  font-weight: 500;
+  line-height: 48rpx;
+}
+.dynamic-info-content.data-v-fbdd4d58 {
+  color: #888888;
+  line-height: 48rpx;
+}
+.dynamic-images.data-v-fbdd4d58 {
+  margin-top: 24rpx;
+}
+.dynamic-images-1 view.data-v-fbdd4d58 {
+  max-width: 100%;
+  height: 500rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12rpx;
+}
+.dynamic-images-2.data-v-fbdd4d58 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.dynamic-images-2 image.data-v-fbdd4d58 {
+  border-radius: 12rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  max-height: 250rpx;
+}
+.dynamic-images-2 image.data-v-fbdd4d58:nth-of-type(1) {
+  margin-right: 12rpx;
+}
+.dynamic-images-2 image.data-v-fbdd4d58:nth-of-type(2) {
+  margin-left: 12rpx;
+}
+.dynamic-images-3.data-v-fbdd4d58 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  max-height: 450rpx;
+  height: 450rpx;
+}
+.dynamic-images-3 > view.data-v-fbdd4d58 {
+  position: relative;
+}
+.dynamic-images-3 > view.data-v-fbdd4d58:nth-of-type(1) {
+  -webkit-box-flex: 1.5;
+  -webkit-flex: 1.5;
+          flex: 1.5;
+  margin-right: 12rpx;
+}
+.dynamic-images-3 > view:nth-of-type(1) image.preview.data-v-fbdd4d58 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.dynamic-images-3 > view:nth-of-type(1) image.data-v-fbdd4d58 {
+  border-radius: 12rpx;
+  width: 100%;
+  height: 100%;
+}
+.dynamic-images-3 > view.data-v-fbdd4d58:nth-of-type(2) {
+  margin-left: 12rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+}
+.dynamic-images-3 > view:nth-of-type(2) > image.data-v-fbdd4d58 {
+  border-radius: 12rpx;
+  height: calc(50% - 12rpx);
+  width: 100%;
+}
+.dynamic-images-3 > view:nth-of-type(2) > image.data-v-fbdd4d58:nth-of-type(1) {
+  margin-bottom: 12rpx;
+}
+.dynamic-images-3 > view:nth-of-type(2) > image.data-v-fbdd4d58:nth-of-type(2) {
+  margin-top: 12rpx;
+}
+.dynamic-images-4.data-v-fbdd4d58 {
+  max-height: 690rpx;
+  height: 690rpx;
+  display: grid;
+  grid-column-gap: 24rpx;
+  grid-row-gap: 24rpx;
+  grid-template-columns: repeat(2, 1fr);
+}
+.dynamic-images-4 view.data-v-fbdd4d58 {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 339rpx;
+  border-radius: 12rpx;
+}
+.dynamic-images-more.data-v-fbdd4d58 {
+  display: grid;
+  grid-column-gap: 4rpx;
+  grid-row-gap: 4rpx;
+  grid-template-columns: repeat(3, 1fr);
+}
+.dynamic-images-more view.data-v-fbdd4d58 {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 231rpx;
+  height: 231rpx;
+}
+.dynamic-comment > view.data-v-fbdd4d58 {
+  margin: 24rpx 0;
+  padding: 8rpx 24rpx;
+  color: #888888;
+  border-left: 1px solid #888888;
+  white-space: 5rpx;
+}
+.dynamic-comment > view > view.data-v-fbdd4d58 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  float: left;
+  color: #333333;
+  height: 38rpx;
+  line-height: 38rpx;
+}
+.dynamic-comment > view > view > text.data-v-fbdd4d58 {
+  color: #FFFFFF;
+  line-height: 16rpx;
+  height: 16rpx;
+  display: block;
+  background-color: #E2585A;
+  border-radius: 6rpx;
+  padding: 2rpx 4rpx;
+  margin: 0 4rpx;
+}
+.dynamic-footer.data-v-fbdd4d58 {
+  padding: 36rpx 0 12rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.dynamic-footer > view.data-v-fbdd4d58 {
+  color: #888888;
+}
+.dynamic-footer > view.data-v-fbdd4d58:nth-of-type(2) {
+  color: #888888;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  margin-left: auto;
+}
+.dynamic-footer > view:nth-of-type(2) text.data-v-fbdd4d58 {
+  color: #888888;
+}
+.dynamic-footer > view:nth-of-type(2) text.data-v-fbdd4d58:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-right: 24rpx;
+  margin-left: 8rpx;
+}
+.dynamic-footer > view:nth-of-type(2) text.data-v-fbdd4d58:nth-of-type(4) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: 8rpx;
+}
+

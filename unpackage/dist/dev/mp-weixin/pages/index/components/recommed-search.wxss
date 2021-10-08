@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.font-color-1.data-v-69545d14 {
+  color: #E2585A !important;
+}
+.font-color-2.data-v-69545d14 {
+  color: #C0863D !important;
+}
+.font-color-3.data-v-69545d14 {
+  color: #D07E4D !important;
+}
+.search-history.data-v-69545d14 {
+  padding: 24rpx;
+  border-bottom: 20rpx solid #f6f7f9;
+}
+.search-history-head.data-v-69545d14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.search-history-head text.data-v-69545d14:first-child {
+  color: #222222;
+  font-weight: 500;
+}
+.search-history-head text.data-v-69545d14:last-child {
+  margin-left: auto;
+  color: #888888;
+}
+.search-history-list.data-v-69545d14 {
+  padding-top: 24rpx;
+  padding-bottom: 12rpx;
+}
+.search-history-list text.data-v-69545d14 {
+  margin-top: 16rpx;
+  padding: 4rpx 24rpx;
+  border: 1px solid #F6F7F9;
+  border-radius: 30rpx;
+  margin-left: 24rpx;
+}
+.search-history-list text.data-v-69545d14:first-child {
+  margin-left: 0 !important;
+}
+.search-recommend.data-v-69545d14 {
+  padding: 0 24rpx;
+}
+.search-recommend-head.data-v-69545d14 {
+  padding-top: 24rpx;
+  font-weight: 500;
+}
+.search-recommend-list.data-v-69545d14 {
+  padding-top: 24rpx;
+}
+.search-recommend-list > view.data-v-69545d14 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24rpx;
+  grid-row-gap: 24rpx;
+}
+.search-recommend-list > view > view > text.data-v-69545d14:first-child {
+  font-family: Bebas-Regular, Bebas;
+  margin: 24rpx;
+  color: #AAAAAA;
+}
+

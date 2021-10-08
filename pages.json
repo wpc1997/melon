@@ -1,0 +1,160 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/channel/index",
+			"style": {}
+		},
+		{
+			"path": "pages/channel/channel-room",
+			"style": {}
+		},
+		{
+			"path": "pages/channel/channel-list",
+			"style": {}
+		},
+		{
+			"path": "pages/issue/index",
+			"style": {}
+		},
+		{
+			"path": "pages/issue/issue-dynamic",
+			"style": {}
+		},
+		{
+			"path": "pages/issue/create-group",
+			"style": {}
+		},
+		{
+			"path": "pages/chat/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/mine-panel",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/about-me",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/input-info",
+			"style": {}
+		},
+		{
+			"path": "pages/chat/chat",
+			"style": {}
+		},
+		{
+			"path": "view/unused-detail",
+			"style": {}
+		},
+		{
+			"path": "view/city",
+			"style": {}
+		},
+		{
+			"path": "view/university",
+			"style": {}
+		},
+		{
+			"path": "view/contribute",
+			"style": {}
+		},
+		{
+			"path": "view/fans",
+			"style": {}
+		},
+		{
+			"path": "view/collection",
+			"style": {}
+		},
+		{
+			"path": "view/focusOn",
+			"style": {}
+		},
+		{
+			"path": "view/iRelat",
+			"style": {}
+		},
+		{
+			"path": "view/login",
+			"style": {}
+		},
+		{
+			"path": "view/register",
+			"style": {}
+		},
+		{
+			"path": "view/reset",
+			"style": {}
+		},
+		{
+			"path": "view/groups",
+			"style": {}
+		}
+	],
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+		}
+	},
+	"globalStyle": {
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "广场"
+			},
+			{
+				"pagePath": "pages/channel/index",
+				"iconPath": "static/img/tabbar/guanzhu.png",
+				"selectedIconPath": "static/img/tabbar/guanzhuactive.png",
+				"text": "频道"
+			},
+			//#ifdef MP-WEIXIN
+			{
+				"pagePath": "pages/issue/index",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png",
+				"text": "发布"
+			},
+			//#endif
+			//#ifndef MP-WEIXIN
+			{
+				"pagePath": "pages/issue/index",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png"
+			},
+			//#endif
+			{
+				"pagePath": "pages/chat/index",
+				"iconPath": "static/img/tabbar/news.png",
+				"selectedIconPath": "static/img/tabbar/newsactive.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "我的"
+			}
+		]
+	}
+}

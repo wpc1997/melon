@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "user-info": "/pages/mine/components/user-info",
+    "area-grid": "/pages/index/components/area-grid",
+    "pet-card": "/pages/mine/components/pet-card"
+  }
+}
