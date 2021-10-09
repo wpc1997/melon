@@ -90,6 +90,7 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  margin-top: 6rpx;
 }
 .pet-card-panel-info > view:nth-of-type(2) > view.data-v-64cedc14 {
   margin: 0 4rpx;

@@ -19,6 +19,7 @@
 			<view class="cancel" @tap="outFocus" :class="isShowSearchPopup?'left-cancle':''" :style="[{marginRight: isShowSearchPopup?'10upx':'0'}]">{{isShowSearchPopup?'取消':''}}</view>
 			
 		</view>
+		
 
 		<!-- 主页轮播图 -->
 		<swiper class="card-swiper" :class="'square-dot'" :indicator-dots="true" :circular="true" :autoplay="true"

@@ -24,15 +24,16 @@
     "view/login",
     "view/register",
     "view/reset",
-    "view/groups"
+    "view/groups",
+    "view/order"
   ],
   "subPackages": [],
   "window": {
     "navigationStyle": "custom"
   },
   "tabBar": {
+    "blurEffect": "extralight",
     "borderStyle": "black",
-    "backgroundColor": "#FFFFFF",
     "color": "#8F8F94",
     "selectedColor": "#f33e54",
     "list": [
@@ -78,6 +79,5 @@
     "cu-custom-header": "/colorui/components/cu-custom-header",
     "cu-custom-foot": "/colorui/components/cu-custom-foot",
     "cu-custom-title": "/colorui/components/cu-custom-title"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

@@ -130,7 +130,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userInfo = function userInfo() {__webpack_require__.e(/*! require.ensure | pages/mine/components/user-info */ "pages/mine/components/user-info").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/user-info.vue */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 238));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var petCard = function petCard() {__webpack_require__.e(/*! require.ensure | pages/mine/components/pet-card */ "pages/mine/components/pet-card").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/pet-card.vue */ 294));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userInfo = function userInfo() {__webpack_require__.e(/*! require.ensure | pages/mine/components/user-info */ "pages/mine/components/user-info").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/user-info.vue */ 295));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 246));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var petCard = function petCard() {__webpack_require__.e(/*! require.ensure | pages/mine/components/pet-card */ "pages/mine/components/pet-card").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/pet-card.vue */ 302));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -212,7 +222,8 @@ __webpack_require__.r(__webpack_exports__);
 
       cardCur: 0,
       gridCol: 5,
-      cuIconList: [{
+      orderList: [
+      {
         cuIcon: 'cardboardfill',
         imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
         radius: '50%',
@@ -248,6 +259,7 @@ __webpack_require__.r(__webpack_exports__);
         badge: 0,
         name: '退款/退货' }],
 
+
       pets: [
       {
         name: '乐堡' },
@@ -257,40 +269,69 @@ __webpack_require__.r(__webpack_exports__);
         name: '开心' }],
 
 
-      list: [{
-        type: 'favor',
-        icon: 'favor',
+
+      serviceList: [
+      {
+        cuIcon: 'goods',
+        imgUrl: '',
+        radius: '50%',
+        name: '今日签到' },
+
+      {
+        cuIcon: 'favor',
+        imgUrl: '',
+        radius: '50%',
         name: '我的收藏' },
 
       {
-        type: 'group',
-        icon: 'group',
-        name: '我创建的小组' },
+        cuIcon: 'group',
+        imgUrl: '',
+        radius: '50%',
+        name: '我的小组' },
 
       {
-        type: 'community',
-        icon: 'community',
-        name: '我加入的小组' },
-
-      {
-        type: 'friendfavor',
-        icon: 'friendfavor',
-        name: '与我相关' },
-
-      {
-        type: 'write',
-        icon: 'write',
-        name: '文案投稿' },
-
-      {
-        type: 'goods',
-        icon: 'goods',
+        cuIcon: 'community',
+        imgUrl: '',
+        radius: '50%',
         name: '我的口袋' },
 
       {
-        type: 'question',
-        icon: 'question',
-        name: '意见反馈' }] };
+        cuIcon: 'friendfavor',
+        imgUrl: '',
+        radius: '50%',
+        name: '与我相关' },
+
+      {
+        cuIcon: 'write',
+        imgUrl: '',
+        radius: '50%',
+        name: '文案投稿' }],
+
+
+      operateList: [
+      {
+        cuIcon: 'question',
+        imgUrl: '',
+        radius: '50%',
+        name: '资质认证' },
+
+      {
+        cuIcon: 'question',
+        imgUrl: '',
+        radius: '50%',
+        name: '申请开店' },
+
+      {
+        cuIcon: 'question',
+        imgUrl: '',
+        radius: '50%',
+        name: '意见反馈' },
+
+      {
+        cuIcon: 'question',
+        imgUrl: '',
+        radius: '50%',
+        name: '联系我们' }] };
 
 
 
@@ -316,6 +357,19 @@ __webpack_require__.r(__webpack_exports__);
     toFocusOn: function toFocusOn() {
       uni.navigateTo({
         url: '../../view/focusOn' });
+
+    },
+
+    //跳转所有订单页
+    toAllOrder: function toAllOrder(index) {
+      uni.navigateTo({
+        url: '../../view/order?idx=' + index });
+
+    },
+
+    girdClickOrder: function girdClickOrder(item, index) {
+      uni.navigateTo({
+        url: '../../view/order?idx=' + (index + 1) });
 
     },
 

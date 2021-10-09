@@ -1,14 +1,14 @@
 <template>
 	<view class="area-grid">
 		<view class="cu-list grid" :class="['col-' + gridCol,'no-border']">
-			<view class="cu-item" v-for="(item,index) in list" :key="index" v-if="index<gridCol*2">
+			<view class="cu-item" v-for="(item,index) in list" :key="index" v-if="index<gridCol*2" @tap="click(item,index)">
 				<view :class="['cuIcon-' + (item.imgUrl?'':item.cuIcon),'text-' + item.color]" :style="{'border-radius':item.radius||'0%'}">
 					<view class="cuIcon-img" :style="[{backgroundImage:'url('+item.imgUrl+')'},{'border-radius':item.radius||'0%'}]" v-if="item.imgUrl"></view>
 					<view class="cu-tag badge" v-if="item.badge!=0">
 						<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
 					</view>
 				</view>
-				<text>{{item.name}}</text>
+				<text class="text-black text-df">{{item.name}}</text>
 			</view>
 		</view>
 	</view>
@@ -32,6 +32,11 @@
 			return{
 				
 			}
+		},
+		methods:{
+			click(item,index){
+				this.$emit('girdClick',item,index)
+			}
 		}
 	}
 </script>
@@ -46,5 +51,8 @@
 		background-position: center;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+	}
+	.text-black{
+		color: #333333!important;
 	}
 </style>

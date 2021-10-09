@@ -54,9 +54,19 @@
 			</view> -->
 			<view class="mine-list-head">
 				<view>我的订单</view>
-				<view>全部 <text class="cuIcon-right"></text></view>
+				<view @tap="toAllOrder(0)">全部 <text class="cuIcon-right"></text></view>
 			</view>
-			<areaGrid :list="cuIconList" :gridCol="gridCol"></areaGrid>
+			<areaGrid :list="orderList" :gridCol="gridCol" @girdClick="girdClickOrder"></areaGrid>
+		</view>
+		
+		<!-- 功能服务列表 -->
+		<view class="mine-list">
+			<areaGrid :list="serviceList" :gridCol="4"></areaGrid>
+		</view>
+		
+		<!-- 功能服务列表 -->
+		<view class="mine-list">
+			<areaGrid :list="operateList" :gridCol="4"></areaGrid>
 		</view>
 
 
@@ -80,42 +90,44 @@
 
 				cardCur: 0,
 				gridCol: 5,
-				cuIconList: [{
-					cuIcon: 'cardboardfill',
-					imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
-					radius: '50%',
-					color: 'red',
-					badge: 120,
-					name: '待付款'
-				}, {
-					cuIcon: 'recordfill',
-					imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
-					radius: '50%',
-					color: 'orange',
-					badge: 1,
-					name: '待发货'
-				}, {
-					cuIcon: 'picfill',
-					imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
-					radius: '50%',
-					color: 'yellow',
-					badge: 0,
-					name: '待收货'
-				}, {
-					cuIcon: 'noticefill',
-					imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
-					radius: '50%',
-					color: 'olive',
-					badge: 22,
-					name: '待评价'
-				}, {
-					cuIcon: 'upstagefill',
-					imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
-					radius: '50%',
-					color: 'cyan',
-					badge: 0,
-					name: '退款/退货'
-				}],
+				orderList: [
+					{
+						cuIcon: 'cardboardfill',
+						imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+						radius: '50%',
+						color: 'red',
+						badge: 120,
+						name: '待付款'
+					}, {
+						cuIcon: 'recordfill',
+						imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+						radius: '50%',
+						color: 'orange',
+						badge: 1,
+						name: '待发货'
+					}, {
+						cuIcon: 'picfill',
+						imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+						radius: '50%',
+						color: 'yellow',
+						badge: 0,
+						name: '待收货'
+					}, {
+						cuIcon: 'noticefill',
+						imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+						radius: '50%',
+						color: 'olive',
+						badge: 22,
+						name: '待评价'
+					}, {
+						cuIcon: 'upstagefill',
+						imgUrl: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg',
+						radius: '50%',
+						color: 'cyan',
+						badge: 0,
+						name: '退款/退货'
+					},
+				],
 				pets:[
 					{
 						name:'乐堡',
@@ -125,40 +137,69 @@
 						name:'开心'
 					}
 				],
-				list: [{
-						type: 'favor',
-						icon: 'favor',
+				
+				serviceList: [
+					{
+						cuIcon: 'goods',
+						imgUrl:'',
+						radius: '50%',
+						name: '今日签到'
+					},
+					{
+						cuIcon: 'favor',
+						imgUrl:'',
+						radius: '50%',
 						name: '我的收藏'
 					},
 					{
-						type: 'group',
-						icon: 'group',
-						name: '我创建的小组'
+						cuIcon: 'group',
+						imgUrl:'',
+						radius: '50%',
+						name: '我的小组'
 					},
 					{
-						type: 'community',
-						icon: 'community',
-						name: '我加入的小组'
-					},
-					{
-						type: 'friendfavor',
-						icon: 'friendfavor',
-						name: '与我相关'
-					},
-					{
-						type: 'write',
-						icon: 'write',
-						name: '文案投稿'
-					},
-					{
-						type: 'goods',
-						icon: 'goods',
+						cuIcon: 'community',
+						imgUrl:'',
+						radius: '50%',
 						name: '我的口袋'
 					},
 					{
-						type: 'question',
-						icon: 'question',
+						cuIcon: 'friendfavor',
+						imgUrl:'',
+						radius: '50%',
+						name: '与我相关'
+					},
+					{
+						cuIcon: 'write',
+						imgUrl:'',
+						radius: '50%',
+						name: '文案投稿'
+					},
+				],
+				operateList:[
+					{
+						cuIcon: 'question',
+						imgUrl:'',
+						radius: '50%',
+						name: '资质认证'
+					},
+					{
+						cuIcon: 'question',
+						imgUrl:'',
+						radius: '50%',
+						name: '申请开店'
+					},
+					{
+						cuIcon: 'question',
+						imgUrl:'',
+						radius: '50%',
 						name: '意见反馈'
+					},
+					{
+						cuIcon: 'question',
+						imgUrl:'',
+						radius: '50%',
+						name: '联系我们'
 					},
 				]
 			}
@@ -184,6 +225,19 @@
 			toFocusOn() {
 				uni.navigateTo({
 					url: '../../view/focusOn'
+				})
+			},
+
+			//跳转所有订单页
+			toAllOrder(index){
+				uni.navigateTo({
+					url:'../../view/order?idx='+index
+				})
+			},
+			
+			girdClickOrder(item,index){
+				uni.navigateTo({
+					url:'../../view/order?idx='+(index+1)
 				})
 			},
 
@@ -243,16 +297,17 @@
 	
 	.mine {
 		min-height: 100vh;
-		background-color: #F1F1F1;
+		background-color: #f5f5f5;
+		padding-bottom: 12upx;
 
 		&-head {
-			background-color: #F1F1F1;
+			background-color: #f5f5f5;
 
 			&-list {
 				padding: 0 24upx;
 				margin-top: 32upx;
-				padding-bottom: 48upx;
-				background: linear-gradient(0deg, #FFFFFF 0%, #F1F1F1 100%);
+				padding-bottom: 12upx;
+				background: linear-gradient(0deg, #FFFFFF 0%, #f5f5f5 100%);
 				display: flex;
 
 				>view:nth-of-type(2) {
@@ -279,26 +334,30 @@
 
 		&-card {
 			width: 100%;
-			padding: 24upx 0;
-			height: 300upx;
+			padding: 24upx 0 0;
+			// height: 300upx;
 			max-height: 300upx;
-			background-color: #FFFFFF;
+			background-color: rgba(0,0,0,0);
 			
 			.card-swiper{
-				height: 300upx!important;
+				height: 200upx!important;
+				
+			}
+			.card-swiper swiper-item{
+				padding: 0!important;
 			}
 		}
 
 		&-list {
 			border-radius: 24upx;
-			margin: 12upx;
+			margin: 24upx;
 			overflow: hidden;
 			// padding: 24upx;
 			background-color: #FFFFFF;
 
 			&-head {
 
-				padding: 24upx;
+				padding: 24upx 24upx 0upx 24upx;
 				display: flex;
 				justify-content: flex-start;
 

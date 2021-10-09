@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 245));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 259));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 253));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 267));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

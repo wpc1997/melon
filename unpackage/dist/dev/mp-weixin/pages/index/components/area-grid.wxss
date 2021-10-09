@@ -34,4 +34,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.text-black.data-v-0a61e423 {
+  color: #333333 !important;
+}
 

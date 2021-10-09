@@ -2,14 +2,14 @@
 	<view class="pet-card">
 
 		<!-- 宠物卡片 -->
-		<image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg"></image>
+		<image src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
 
 		<!-- 模糊背景 -->
 		<view class="pet-card-filter"></view>
 
 		<view class="pet-card-panel">
 			<view class="pet-card-panel-avatar">
-				<image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg"></image>
+				<image src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
 			</view>
 			<view class="pet-card-panel-info">
 				<view>
@@ -89,6 +89,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: flex-start;
+					
 
 					>view {
 						margin: 0 4upx;
@@ -110,6 +111,7 @@
 
 				>view:nth-of-type(2) {
 					display: flex;
+					margin-top: 6upx;
 
 					>view {
 						margin: 0 4upx;

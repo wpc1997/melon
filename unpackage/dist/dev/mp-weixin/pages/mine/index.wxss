@@ -26,17 +26,18 @@
 /* 文章场景相关 */
 .mine.data-v-4bd6864f {
   min-height: 100vh;
-  background-color: #F1F1F1;
+  background-color: #f5f5f5;
+  padding-bottom: 12rpx;
 }
 .mine-head.data-v-4bd6864f {
-  background-color: #F1F1F1;
+  background-color: #f5f5f5;
 }
 .mine-head-list.data-v-4bd6864f {
   padding: 0 24rpx;
   margin-top: 32rpx;
-  padding-bottom: 48rpx;
-  background: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F1F1F1 100%);
-  background: linear-gradient(0deg, #FFFFFF 0%, #F1F1F1 100%);
+  padding-bottom: 12rpx;
+  background: -webkit-linear-gradient(bottom, #FFFFFF 0%, #f5f5f5 100%);
+  background: linear-gradient(0deg, #FFFFFF 0%, #f5f5f5 100%);
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -70,22 +71,24 @@
 }
 .mine-card.data-v-4bd6864f {
   width: 100%;
-  padding: 24rpx 0;
-  height: 300rpx;
+  padding: 24rpx 0 0;
   max-height: 300rpx;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 .mine-card .card-swiper.data-v-4bd6864f {
-  height: 300rpx !important;
+  height: 200rpx !important;
+}
+.mine-card .card-swiper swiper-item.data-v-4bd6864f {
+  padding: 0 !important;
 }
 .mine-list.data-v-4bd6864f {
   border-radius: 24rpx;
-  margin: 12rpx;
+  margin: 24rpx;
   overflow: hidden;
   background-color: #FFFFFF;
 }
 .mine-list-head.data-v-4bd6864f {
-  padding: 24rpx;
+  padding: 24rpx 24rpx 0rpx 24rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
