@@ -36,7 +36,7 @@
 
 		<!-- 金刚区 -->
 		<view class="content-area">
-			<areaGrid :list="cuIconList" :gridCol="gridCol"></areaGrid>
+			<areaGrid :list="cuIconList" :gridCol="gridCol" @girdClick="girdClick"></areaGrid>
 		</view>
 
 		<!-- 热门模块 -->
@@ -100,27 +100,28 @@
 					cuIcon: 'cardboardfill',
 					color: 'red',
 					badge: 120,
-					name: 'VR'
+					name: '签到'
 				}, {
 					cuIcon: 'recordfill',
 					color: 'orange',
 					badge: 1,
-					name: '录像'
+					name: '问答',
+					url:'../../view/answer',
 				}, {
 					cuIcon: 'picfill',
 					color: 'yellow',
 					badge: 0,
-					name: '图像'
+					name: '小组'
 				}, {
 					cuIcon: 'noticefill',
 					color: 'olive',
 					badge: 22,
-					name: '通知'
+					name: '课堂'
 				}, {
 					cuIcon: 'upstagefill',
 					color: 'cyan',
 					badge: 0,
-					name: '排行榜'
+					name: '寻宠'
 				}],
 				swiperList: [{
 					id: 0,
@@ -185,6 +186,12 @@
 			toChannelList(){
 				uni.navigateTo({
 					url:'../channel/channel-list'
+				})
+			},
+			
+			girdClick(item,index){
+				uni.navigateTo({
+					url:item.url
 				})
 			}
 		}

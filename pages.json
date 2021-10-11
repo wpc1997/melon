@@ -110,6 +110,15 @@
             }
             
         }
+        ,{
+            "path" : "view/answer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"permission": {
 		"scope.userLocation": {

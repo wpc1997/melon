@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "order-card-list": "/components/order-card-list"
+  }
+}

@@ -25,7 +25,8 @@
     "view/register",
     "view/reset",
     "view/groups",
-    "view/order"
+    "view/order",
+    "view/answer"
   ],
   "subPackages": [],
   "window": {
@@ -78,6 +79,7 @@
     "cu-custom": "/colorui/components/cu-custom",
     "cu-custom-header": "/colorui/components/cu-custom-header",
     "cu-custom-foot": "/colorui/components/cu-custom-foot",
-    "cu-custom-title": "/colorui/components/cu-custom-title"
+    "cu-custom-title": "/colorui/components/cu-custom-title",
+    "cu-custom-search": "/colorui/components/cu-custom-search"
   }
 }

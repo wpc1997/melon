@@ -4,11 +4,14 @@
 			<block slot="content">我的订单</block>
 		</cu-custom>
 		<view class="order-tabs bg-gradual-white" :style="{top:(CustomBar?CustomBar+'px':'84px')}">
-			<custom-tabs :tabs="tabs" :tabIndex="tabIndex"></custom-tabs>
+			<custom-tabs :tabs="tabs" :tabIndex="tabIndex" :isAvg="true"></custom-tabs>
 		</view>
+		<!-- <view class="order"></view> -->
 		<view class="order-view" id="scrollView">
 			<refresh :scrollHeight="scrollHeight">
-				<view>123456789</view>
+				<view class="order-list">
+					<order-card></order-card>
+				</view>
 			</refresh>
 		</view>
 	</view>
@@ -17,11 +20,13 @@
 <script>
 	import customTabs from "@/components/custom-tabs.vue";
 	import refresh from "@/components/refresh.vue";
+	import orderCard from "@/components/order-card.vue";
 
 	export default {
 		components: {
 			customTabs,
-			refresh
+			refresh,
+			orderCard
 		},
 		data() {
 			return {
@@ -70,6 +75,10 @@
 </script>
 
 <style lang="scss" scoped>
+	
+	.order-list{
+		padding: 24upx;
+	}
 	.order {
 
 		min-height: 100vh;
@@ -81,7 +90,7 @@
 
 		&-tabs {
 
-			position: sticky;
+			position: fixed;
 			z-index: 9;
 			width: 100%;
 			padding: 0upx 0upx 12upx 0;
@@ -89,7 +98,7 @@
 		
 		&-view{
 			flex: 1;
-			
+			margin-top: 92upx;
 		}
 
 	}

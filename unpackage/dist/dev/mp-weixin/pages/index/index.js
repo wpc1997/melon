@@ -140,7 +140,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 246));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 253));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendSearch = function recommendSearch() {__webpack_require__.e(/*! require.ensure | pages/index/components/recommed-search */ "pages/index/components/recommed-search").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/recommed-search.vue */ 260));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 267));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var dynamic = function dynamic() {__webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {return resolve(__webpack_require__(/*! @/components/dynamic.vue */ 274));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 254));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 261));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendSearch = function recommendSearch() {__webpack_require__.e(/*! require.ensure | pages/index/components/recommed-search */ "pages/index/components/recommed-search").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/recommed-search.vue */ 268));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 275));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var dynamic = function dynamic() {__webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {return resolve(__webpack_require__(/*! @/components/dynamic.vue */ 282));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -242,27 +242,28 @@ __webpack_require__.r(__webpack_exports__);
         cuIcon: 'cardboardfill',
         color: 'red',
         badge: 120,
-        name: 'VR' },
+        name: '签到' },
       {
         cuIcon: 'recordfill',
         color: 'orange',
         badge: 1,
-        name: '录像' },
+        name: '问答',
+        url: '../../view/answer' },
       {
         cuIcon: 'picfill',
         color: 'yellow',
         badge: 0,
-        name: '图像' },
+        name: '小组' },
       {
         cuIcon: 'noticefill',
         color: 'olive',
         badge: 22,
-        name: '通知' },
+        name: '课堂' },
       {
         cuIcon: 'upstagefill',
         color: 'cyan',
         badge: 0,
-        name: '排行榜' }],
+        name: '寻宠' }],
 
       swiperList: [{
         id: 0,
@@ -327,6 +328,12 @@ __webpack_require__.r(__webpack_exports__);
     toChannelList: function toChannelList() {
       uni.navigateTo({
         url: '../channel/channel-list' });
+
+    },
+
+    girdClick: function girdClick(item, index) {
+      uni.navigateTo({
+        url: item.url });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

@@ -24,6 +24,9 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.order-list.data-v-63be051c {
+  padding: 24rpx;
+}
 .order.data-v-63be051c {
   min-height: 100vh;
   background-color: #f5f5f5;
@@ -36,8 +39,7 @@
           flex-flow: column;
 }
 .order-tabs.data-v-63be051c {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 9;
   width: 100%;
   padding: 0rpx 0rpx 12rpx 0;
@@ -46,5 +48,6 @@
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
+  margin-top: 92rpx;
 }
 

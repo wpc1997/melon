@@ -130,7 +130,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! @/components/custom-tabs.vue */ 330));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! @/components/refresh.vue */ 337));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! @/components/custom-tabs.vue */ 338));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! @/components/refresh.vue */ 345));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var orderCard = function orderCard() {__webpack_require__.e(/*! require.ensure | components/order-card */ "components/order-card").then((function () {return resolve(__webpack_require__(/*! @/components/order-card.vue */ 352));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
 
 
 
@@ -153,7 +157,8 @@ __webpack_require__.r(__webpack_exports__);
 {
   components: {
     customTabs: customTabs,
-    refresh: refresh },
+    refresh: refresh,
+    orderCard: orderCard },
 
   data: function data() {
     return {

@@ -3,7 +3,7 @@
 
 		<!-- 自定义tabs栏 -->
 
-		<view class="custom-tabs-tab" :class="{'active':tabCur===index}" @tap="clickTab(index)" :id="'main-'+index" v-for="(item,index) in tabs"
+		<view class="custom-tabs-tab" :class="{'active':tabCur===index}" :style="[{flex:isAvg?1:''}]" @tap="clickTab(item,index)" :id="'main-'+index" v-for="(item,index) in tabs"
 			:key="index">{{item.title}}</view>
 
 
@@ -26,6 +26,10 @@
 			tabIndex:{
 				type:Number,
 				default: 0
+			},
+			isAvg:{
+				type:Boolean,
+				default: false
 			}
 		},
 		data() {
@@ -45,15 +49,21 @@
 				console.log(data)
 				_this.lineWidth = data.width
 
-				_this.clickTab(_this.tabIndex)
+				_this.clickTab(_this.tabs[_this.tabIndex],_this.tabIndex)
 
 			}).exec();
 
 
 
 		},
+		watch:{
+			tabIndex(){
+				console.log('tabIndex变化')
+				this.clickTab(this.tabs[this.tabIndex],this.tabIndex)
+			}
+		},
 		methods: {
-			clickTab(index) {
+			clickTab(item,index) {
 				let _this = this
 				let width = 0;
 				let id = 'main-' + index
@@ -67,6 +77,10 @@
 					console.log(_this.lineWidth / 2)
 
 				}).exec();
+				
+				//把当前选择的tabs栏的数据和索引传到父组件
+				_this.$emit('clickTab',item,index)
+				
 			}
 		}
 	}
@@ -90,7 +104,7 @@
 		&-tab {
 
 			display: flex;
-			flex: 1;
+			// flex: 1;
 			justify-content: center;
 			align-items: center;
 			min-width: 60upx;

@@ -3,6 +3,7 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "custom-tabs": "/components/custom-tabs",
-    "refresh": "/components/refresh"
+    "refresh": "/components/refresh",
+    "order-card": "/components/order-card"
   }
 }
