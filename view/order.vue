@@ -3,16 +3,29 @@
 		<cu-custom bgColor="bg-gradual-white" :isBack="true">
 			<block slot="content">我的订单</block>
 		</cu-custom>
-		<view class="order-tabs bg-gradual-white" :style="{top:(CustomBar?CustomBar+'px':'84px')}">
-			<custom-tabs :tabs="tabs" :tabIndex="tabIndex" :isAvg="true"></custom-tabs>
+		<view class="order-tabs bg-gradual-white" :style="{top:(CustomBar?CustomBar+'px':'84px')}" id="tabs">
+			<custom-tabs :tabs="tabs" :tabIndex="tabIndex" :isAvg="true" @clickTab="clickTab"></custom-tabs>
 		</view>
 		<!-- <view class="order"></view> -->
-		<view class="order-view" id="scrollView">
-			<refresh :scrollHeight="scrollHeight">
+		<view class="order-view" id="scrollView" :style="[{'margin-top':marginTop+'px'}]">
+			<swiper class="swiper" :style="{height:scrollHeight+'px'}" duration="350" :indicator-dots="false" :current="current" :autoplay="false" @change="change">
+				<swiper-item v-for="(item,index) in tabs" :key="index">
+					<refresh :scrollHeight="scrollHeight" class="order-list" @scrolltolower="scrolltolower">
+						<view class="order-list-card">
+							<order-card></order-card>
+							<order-card></order-card>
+							<order-card></order-card>
+							<order-card></order-card>
+						</view>
+					</refresh>
+				</swiper-item>
+			</swiper>
+			
+			<!-- <refresh :scrollHeight="scrollHeight">
 				<view class="order-list">
 					<order-card></order-card>
 				</view>
-			</refresh>
+			</refresh> -->
 		</view>
 	</view>
 </template>
@@ -50,7 +63,9 @@
 					},
 				],
 				tabIndex: 0,
-				scrollHeight:0
+				scrollHeight:0,
+				marginTop:46,
+				current:0,
 			}
 		},
 		onLoad(option) {
@@ -67,17 +82,46 @@
 				_this.scrollHeight = data.height
 			
 			}).exec();
+			
+			query.select('#tabs').boundingClientRect(data => {
+			
+				console.log(data)
+				_this.marginTop = data.height
+			
+			}).exec();
 		},
 		methods: {
 			
+			
+			
+			
+			
+			//触底触发上拉刷新
+			scrolltolower(){
+				
+			},
+			
+			//接收到tab栏传过来的数据和索引，来渲染和控制swiper的双向滑动，如果swiper里面已经有内容，则不渲染数据
+			clickTab(item,index){
+				this.current = index
+			},
+			
+			//swiper滑动事件
+			change(e){
+				
+				console.log(e)
+				this.tabIndex = e.detail.current
+				
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 	
-	.order-list{
-		padding: 24upx;
+	
+	.order-list-card{
+		margin: 0 24upx;
 	}
 	.order {
 
@@ -98,7 +142,6 @@
 		
 		&-view{
 			flex: 1;
-			margin-top: 92upx;
 		}
 
 	}

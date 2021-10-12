@@ -154,6 +154,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   components: {
     customTabs: customTabs,
@@ -182,7 +195,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
       tabIndex: 0,
-      scrollHeight: 0 };
+      scrollHeight: 0,
+      marginTop: 46,
+      current: 0 };
 
   },
   onLoad: function onLoad(option) {
@@ -199,8 +214,37 @@ __webpack_require__.r(__webpack_exports__);
       _this.scrollHeight = data.height;
 
     }).exec();
+
+    query.select('#tabs').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this.marginTop = data.height;
+
+    }).exec();
   },
-  methods: {} };exports.default = _default;
+  methods: {
+
+
+
+
+
+    //触底触发上拉刷新
+    scrolltolower: function scrolltolower() {
+
+    },
+
+    //接收到tab栏传过来的数据和索引，来渲染和控制swiper的双向滑动，如果swiper里面已经有内容，则不渲染数据
+    clickTab: function clickTab(item, index) {
+      this.current = index;
+    },
+
+    //swiper滑动事件
+    change: function change(e) {
+
+      console.log(e);
+      this.tabIndex = e.detail.current;
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

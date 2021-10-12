@@ -116,6 +116,7 @@
 	.order-card {
 		background-color: #FFFFFF;
 		border-radius: 12upx;
+		margin-top: 24upx;
 
 		&-head {
 			padding: 24upx 24upx 12upx 24upx;

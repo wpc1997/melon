@@ -34,6 +34,12 @@
   -webkit-flex-flow: column;
           flex-flow: column;
 }
+.answer-tabs.data-v-04b91a4a {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  padding: 0rpx 0rpx 12rpx 0;
+}
 .answer-list.data-v-04b91a4a {
   -webkit-box-flex: 1;
   -webkit-flex: 1;

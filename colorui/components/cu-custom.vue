@@ -52,10 +52,18 @@
 			backColor:{
 				type: String,
 				default: undefined
+			},
+			isTap:{
+				type: [Boolean, String],
+				default: false
 			}
 		},
 		methods: {
 			BackPage() {
+				if(this.isTap){
+					this.$emit('clickTap')
+					return
+				}
 				uni.navigateBack({
 					delta: 1
 				});

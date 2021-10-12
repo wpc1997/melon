@@ -156,7 +156,7 @@ var _default =
     //自定义下拉刷新控件被下拉时触发
     onPulling: function onPulling(e) {
       this.triggered = true;
-      if (e.detail.dy >= 60) {
+      if (e.detail.dy >= 48) {
         this.notice = '释放即可刷新...';
       } else {
         this.notice = '下拉即可刷新...';
@@ -188,6 +188,12 @@ var _default =
       this.triggered = false;
       this.notice = '下拉即可刷新...';
       console.log("onAbort");
+    },
+
+    //滚动条触底时触发
+    scrolltolower: function scrolltolower(e) {
+      console.log("触底：", e);
+      this.$emit('scrolltolower');
     } } };exports.default = _default;
 
 /***/ }),

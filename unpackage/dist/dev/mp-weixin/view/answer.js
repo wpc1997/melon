@@ -130,7 +130,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! @/components/custom-tabs.vue */ 338));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! @/components/refresh.vue */ 345));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! @/components/custom-tabs.vue */ 338));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! @/components/refresh.vue */ 345));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var question = function question() {__webpack_require__.e(/*! require.ensure | view/components/question */ "view/components/question").then((function () {return resolve(__webpack_require__(/*! @/view/components/question.vue */ 427));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 
@@ -166,32 +167,89 @@ __webpack_require__.r(__webpack_exports__);
 {
   components: {
     customTabs: customTabs,
-    refresh: refresh },
+    refresh: refresh,
+    question: question },
 
   data: function data() {
     return {
 
+      CustomBar: this.CustomBar,
       tabs: [{
         title: '热门',
-        data: [] //把每个tab栏对应的数据挂到对应的tab栏上，然后进行swiper切换，避免每次切换tab栏都存在重新获取数据
+        list: [
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' },
+
+        {
+          id: 'a',
+          title: '边境牧羊犬拉肚子的坏毛病',
+          answer: '这种情况一般考虑多喂一些益生菌保证肠胃健康' }]
+
+        //把每个tab栏对应的数据挂到对应的tab栏上，然后进行swiper切换，避免每次切换tab栏都存在重新获取数据
       },
       {
         title: '最新',
-        data: [] }],
+        list: [
+        {
+          id: 'b',
+          title: '阿拉斯加真的可以长到180斤吗',
+          answer: '你好，阿拉斯加是可以长到100斤的，至于180斤就是谣言' }] }],
+
+
 
 
       scrollHeight: 0,
       current: 0, //当前所在滑块的 index
-      tabIndex: 0 //tab栏所选中的索引
-    };
+      tabIndex: 0, //tab栏所选中的索引
+      marginTop: 0 };
+
   },
   onReady: function onReady() {
     var _this = this;
     var query = uni.createSelectorQuery().in(this);
+
+    query.select('#tabs').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this.marginTop = data.height;
+
+    }).exec();
     query.select('#scrollView').boundingClientRect(function (data) {
 
       console.log(data);
-      _this.scrollHeight = data.height;
+      _this.scrollHeight = data.height - _this.marginTop;
 
     }).exec();
   },

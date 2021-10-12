@@ -167,11 +167,19 @@ var _default =
 
     backColor: {
       type: String,
-      default: undefined } },
+      default: undefined },
+
+    isTap: {
+      type: [Boolean, String],
+      default: false } },
 
 
   methods: {
     BackPage: function BackPage() {
+      if (this.isTap) {
+        this.$emit('clickTap');
+        return;
+      }
       uni.navigateBack({
         delta: 1 });
 

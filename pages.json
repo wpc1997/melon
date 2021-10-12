@@ -119,6 +119,15 @@
             }
             
         }
+        ,{
+            "path" : "view/registration",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"permission": {
 		"scope.userLocation": {

@@ -100,7 +100,8 @@
 					cuIcon: 'cardboardfill',
 					color: 'red',
 					badge: 120,
-					name: '签到'
+					name: '签到',
+					url:'../../view/registration',
 				}, {
 					cuIcon: 'recordfill',
 					color: 'orange',

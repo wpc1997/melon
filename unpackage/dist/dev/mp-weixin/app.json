@@ -26,7 +26,8 @@
     "view/reset",
     "view/groups",
     "view/order",
-    "view/answer"
+    "view/answer",
+    "view/registration"
   ],
   "subPackages": [],
   "window": {

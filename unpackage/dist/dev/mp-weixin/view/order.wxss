@@ -24,8 +24,8 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.order-list.data-v-63be051c {
-  padding: 24rpx;
+.order-list-card.data-v-63be051c {
+  margin: 0 24rpx;
 }
 .order.data-v-63be051c {
   min-height: 100vh;
@@ -48,6 +48,5 @@
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
-  margin-top: 92rpx;
 }
 
