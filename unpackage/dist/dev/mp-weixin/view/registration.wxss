@@ -51,6 +51,8 @@
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
           flex-flow: column;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .registration-head.data-v-319fc6c5 {
   position: relative;
@@ -183,13 +185,16 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 .records.data-v-319fc6c5 {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  background-color: #FFFFFF;
+  -webkit-transform: rotateY(-180deg) translateZ(1px);
+          transform: rotateY(-180deg) translateZ(1px);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #FF945C);
+  background-image: linear-gradient(0deg, #ffffff, #FF945C);
 }
 

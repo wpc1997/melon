@@ -49,7 +49,7 @@
 				<view class="registration-panel-text">今天还未签到</view>
 
 				<view class="registration-panel-record" @tap="toRecords()">
-					<text class="text-sm">查看近期签到记录</text>
+					<text class="text-sm" @tap="toRecords()">查看近期签到记录</text>
 					<text class="cuIcon-right"></text>
 				</view>
 			</view>
@@ -173,7 +173,14 @@
 
 			//返回翻转之前的页面
 			clickTap() {
-
+				
+				console.log('返回')
+				if(!this.isAnim){
+					uni.navigateBack({
+						delta:1
+					})
+					return
+				}
 				this.isAnim = false
 			},
 
@@ -204,6 +211,7 @@
 		left: 0;
 		display: flex;
 		flex-flow: column;
+        backface-visibility: hidden;
 
 		&-head {
 			position: relative;
@@ -310,12 +318,16 @@
 
 	.records {
 
-		transform: rotateY(-180deg);
-		background-color: #FFFFFF;
+		// 因为使用transform时会创建更高层级的stacking context（堆叠上下文），会导致z-index属性失效。之后就想通过translateZ来把后面盒子放到顶上来，backface-visibility:hidden属性，这个属性就是将旋转图片的背面隐藏，既然浏览器都不知道显示哪一个，我就显示一个把后面的隐藏起来，很好的解决了这个问题，（但要记得给front盒子和back盒子都要加！！）
+		transform: rotateY(-180deg)  translateZ(1px);
+		// background-color: #888888;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
 		position: absolute;
+        backface-visibility: hidden;
+		
+		background-image: linear-gradient(0deg, #ffffff, #FF945C);
 	}
 </style>
