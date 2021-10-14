@@ -194,7 +194,67 @@
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
   background-image: -webkit-linear-gradient(bottom, #ffffff, #FF945C);
   background-image: linear-gradient(0deg, #ffffff, #FF945C);
+}
+.records-calendar.data-v-319fc6c5 {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  margin: auto 24rpx;
+  border-radius: 24rpx;
+}
+.records-calendar-head.data-v-319fc6c5 {
+  padding: 12rpx 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.records-calendar-head-back.data-v-319fc6c5 {
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 12rpx;
+}
+.records-calendar-head-title.data-v-319fc6c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.records-calendar-head-right.data-v-319fc6c5 {
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 12rpx;
 }
 

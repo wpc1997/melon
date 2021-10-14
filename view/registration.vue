@@ -60,8 +60,24 @@
 		<view class="records">
 
 			<cu-custom :isBack="true" bgColor="bg-gradual-opacity" :isTap="true" @clickTap="clickTap">
-				<block slot="content">签到记录</block>
+				<block slot="content"></block>
 			</cu-custom>
+
+			<view class="records-calendar">
+				<view class="records-calendar-head">
+					<view class="records-calendar-head-back">
+						<text class="cuIcon-back"></text>
+					</view>
+					<view class="records-calendar-head-title">
+						<text class="text-df text-bold">签到记录</text>
+					</view>
+					<view class="records-calendar-head-right">
+						<text class="cuIcon-right"></text>
+					</view>
+				</view>
+				<calendar :bg="'rgba(0,0,0,0)'" :poppable="false" :showClose="false" :showButton="false"
+					:showTitle="false"></calendar>
+			</view>
 
 		</view>
 
@@ -71,7 +87,12 @@
 </template>
 
 <script>
+	import calendar from '@/components/calendar.vue'
+
 	export default {
+		components: {
+			calendar
+		},
 		data() {
 			return {
 				weeks: [{
@@ -173,11 +194,11 @@
 
 			//返回翻转之前的页面
 			clickTap() {
-				
+
 				console.log('返回')
-				if(!this.isAnim){
+				if (!this.isAnim) {
 					uni.navigateBack({
-						delta:1
+						delta: 1
 					})
 					return
 				}
@@ -211,7 +232,7 @@
 		left: 0;
 		display: flex;
 		flex-flow: column;
-        backface-visibility: hidden;
+		backface-visibility: hidden;
 
 		&-head {
 			position: relative;
@@ -319,15 +340,51 @@
 	.records {
 
 		// 因为使用transform时会创建更高层级的stacking context（堆叠上下文），会导致z-index属性失效。之后就想通过translateZ来把后面盒子放到顶上来，backface-visibility:hidden属性，这个属性就是将旋转图片的背面隐藏，既然浏览器都不知道显示哪一个，我就显示一个把后面的隐藏起来，很好的解决了这个问题，（但要记得给front盒子和back盒子都要加！！）
-		transform: rotateY(-180deg)  translateZ(1px);
-		// background-color: #888888;
+		transform: rotateY(-180deg) translateZ(1px);
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
 		position: absolute;
-        backface-visibility: hidden;
-		
+		backface-visibility: hidden;
+		display: flex;
+		flex-flow: column;
 		background-image: linear-gradient(0deg, #ffffff, #FF945C);
+
+		&-calendar {
+			background-color: #FFFFFF;
+			overflow: hidden;
+			margin: auto 24upx;
+			border-radius: 24upx;
+
+			&-head {
+				padding: 12upx 0;
+				width: 100%;
+				display: flex;
+
+				&-back {
+					height: 60upx;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 0 12upx;
+				}
+				&-title{
+					flex: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				&-right {
+					height: 60upx;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 0 12upx;
+				}
+
+			}
+
+		}
 	}
 </style>
