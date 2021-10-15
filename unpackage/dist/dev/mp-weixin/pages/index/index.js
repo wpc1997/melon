@@ -140,7 +140,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 269));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 276));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendSearch = function recommendSearch() {__webpack_require__.e(/*! require.ensure | pages/index/components/recommed-search */ "pages/index/components/recommed-search").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/recommed-search.vue */ 283));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 290));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var dynamic = function dynamic() {__webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {return resolve(__webpack_require__(/*! @/components/dynamic.vue */ 297));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 291));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCards = function hotCards() {__webpack_require__.e(/*! require.ensure | pages/index/components/hot-cards */ "pages/index/components/hot-cards").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/hot-cards */ 298));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendSearch = function recommendSearch() {__webpack_require__.e(/*! require.ensure | pages/index/components/recommed-search */ "pages/index/components/recommed-search").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/recommed-search.vue */ 305));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var panel = function panel() {__webpack_require__.e(/*! require.ensure | components/panel */ "components/panel").then((function () {return resolve(__webpack_require__(/*! @/components/panel.vue */ 312));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var dynamic = function dynamic() {__webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {return resolve(__webpack_require__(/*! @/components/dynamic.vue */ 319));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -254,17 +254,20 @@ __webpack_require__.r(__webpack_exports__);
         cuIcon: 'picfill',
         color: 'yellow',
         badge: 0,
-        name: '小组' },
+        name: '小组',
+        url: '../../view/channel' },
       {
         cuIcon: 'noticefill',
         color: 'olive',
         badge: 22,
-        name: '课堂' },
+        name: '课堂',
+        url: '../../view/classroom' },
       {
         cuIcon: 'upstagefill',
         color: 'cyan',
         badge: 0,
-        name: '寻宠' }],
+        name: '寻宠',
+        url: '../../view/found' }],
 
       swiperList: [{
         id: 0,
@@ -328,7 +331,7 @@ __webpack_require__.r(__webpack_exports__);
     //跳转至小组列表页
     toChannelList: function toChannelList() {
       uni.navigateTo({
-        url: '../channel/channel-list' });
+        url: '../../view/channel-list' });
 
     },
 

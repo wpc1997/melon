@@ -24,12 +24,12 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.channel-list.data-v-0c32daad {
+.channel-list.data-v-75a30db4 {
   min-height: 100vh;
   background-color: #F1F1F1;
   padding-bottom: 24rpx;
 }
-.channel-list-tab.data-v-0c32daad {
+.channel-list-tab.data-v-75a30db4 {
   position: -webkit-sticky;
   position: sticky;
   z-index: 999;

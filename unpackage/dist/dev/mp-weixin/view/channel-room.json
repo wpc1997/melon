@@ -1,4 +1,6 @@
 {
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
   "usingComponents": {
     "dynamic": "/components/dynamic"
   }

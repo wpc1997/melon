@@ -53,7 +53,7 @@
 		methods:{
 			toChannelRoom(){
 				uni.navigateTo({
-					url:'/pages/channel/channel-room'
+					url:'../../../view/channel-room'
 				})
 			}
 		}

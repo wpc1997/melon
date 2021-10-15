@@ -112,17 +112,20 @@
 					cuIcon: 'picfill',
 					color: 'yellow',
 					badge: 0,
-					name: '小组'
+					name: '小组',
+					url:'../../view/channel',
 				}, {
 					cuIcon: 'noticefill',
 					color: 'olive',
 					badge: 22,
-					name: '课堂'
+					name: '课堂',
+					url:'../../view/classroom',
 				}, {
 					cuIcon: 'upstagefill',
 					color: 'cyan',
 					badge: 0,
-					name: '寻宠'
+					name: '寻宠',
+					url:'../../view/found',
 				}],
 				swiperList: [{
 					id: 0,
@@ -186,7 +189,7 @@
 			//跳转至小组列表页
 			toChannelList(){
 				uni.navigateTo({
-					url:'../channel/channel-list'
+					url:'../../view/channel-list'
 				})
 			},
 			
@@ -210,7 +213,7 @@
 		.search-popup{
 			position: fixed;
 			top: -100vh;
-			transition: 500ms all;
+			transition: 500ms ease;
 			z-index: 999;
 			background-color: #FFFFFF;
 			padding-top: 280upx;

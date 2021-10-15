@@ -1,0 +1,1 @@
+<view class="found data-v-1c1458b4"><view class="found-head data-v-1c1458b4"><cu-custom vue-id="4cc52220-1" bgColor="bg-shadeTop text-white" isBack="{{true}}" backColor="white" class="data-v-1c1458b4" bind:__l="__l" vue-slots="{{['content']}}"><view slot="content" class="data-v-1c1458b4">寻宠启示</view></cu-custom></view><view class="found-sort data-v-1c1458b4"></view></view>

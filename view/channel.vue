@@ -1,6 +1,6 @@
 <template>
 	<view class="channel">
-		<cu-custom bgColor="bg-gradual-white" :isBack="false">
+		<cu-custom bgColor="bg-gradual-white" :isBack="true">
 			<block slot="content">频道</block>
 		</cu-custom>
 		

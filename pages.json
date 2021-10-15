@@ -6,15 +6,7 @@
 			"style": {}
 		},
 		{
-			"path": "pages/channel/index",
-			"style": {}
-		},
-		{
-			"path": "pages/channel/channel-room",
-			"style": {}
-		},
-		{
-			"path": "pages/channel/channel-list",
+			"path": "pages/mall/index",
 			"style": {}
 		},
 		{
@@ -120,7 +112,52 @@
             
         }
         ,{
+            "path" : "view/channel",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "view/channel-list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "view/channel-room",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
             "path" : "view/registration",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "view/classroom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "view/found",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -150,10 +187,10 @@
 				"text": "广场"
 			},
 			{
-				"pagePath": "pages/channel/index",
+				"pagePath": "pages/mall/index",
 				"iconPath": "static/img/tabbar/guanzhu.png",
 				"selectedIconPath": "static/img/tabbar/guanzhuactive.png",
-				"text": "频道"
+				"text": "商城"
 			},
 			//#ifdef MP-WEIXIN
 			{

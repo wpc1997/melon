@@ -34,8 +34,8 @@
 .content .search-popup.data-v-57280228 {
   position: fixed;
   top: -100vh;
-  -webkit-transition: 500ms all;
-  transition: 500ms all;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
   z-index: 999;
   background-color: #FFFFFF;
   padding-top: 280rpx;

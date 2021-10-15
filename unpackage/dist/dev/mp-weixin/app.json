@@ -1,9 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/channel/index",
-    "pages/channel/channel-room",
-    "pages/channel/channel-list",
+    "pages/mall/index",
     "pages/issue/index",
     "pages/issue/issue-dynamic",
     "pages/issue/create-group",
@@ -27,7 +25,12 @@
     "view/groups",
     "view/order",
     "view/answer",
-    "view/registration"
+    "view/channel",
+    "view/channel-list",
+    "view/channel-room",
+    "view/registration",
+    "view/classroom",
+    "view/found"
   ],
   "subPackages": [],
   "window": {
@@ -46,10 +49,10 @@
         "text": "广场"
       },
       {
-        "pagePath": "pages/channel/index",
+        "pagePath": "pages/mall/index",
         "iconPath": "static/img/tabbar/guanzhu.png",
         "selectedIconPath": "static/img/tabbar/guanzhuactive.png",
-        "text": "频道"
+        "text": "商城"
       },
       {
         "pagePath": "pages/issue/index",
@@ -82,5 +85,6 @@
     "cu-custom-foot": "/colorui/components/cu-custom-foot",
     "cu-custom-title": "/colorui/components/cu-custom-title",
     "cu-custom-search": "/colorui/components/cu-custom-search"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
