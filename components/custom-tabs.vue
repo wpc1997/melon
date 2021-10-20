@@ -3,7 +3,7 @@
 
 		<!-- 自定义tabs栏 -->
 
-		<view class="custom-tabs-tab" :class="{'active':tabCur===index}" :style="[{flex:isAvg?1:''}]" @tap="clickTab(item,index)" :id="'main-'+index" v-for="(item,index) in tabs"
+		<view class="custom-tabs-tab" :class="[{'active':tabCur===index},{'yes-Avg':isAvg},{'no-Avg':!isAvg}]" @tap="clickTab(item,index)" :id="'main-'+index" v-for="(item,index) in tabs"
 			:key="index">{{item.title}}</view>
 
 
@@ -87,6 +87,16 @@
 </script>
 
 <style lang="scss" scoped>
+	
+	.yes-Avg{
+		
+		flex: 1;
+		
+	}
+	.no-Avg{
+		padding: 0 32upx;
+	}
+	
 	.custom-tabs {
 
 		position: relative;
@@ -120,7 +130,7 @@
 			width: 40upx;
 			height: 6upx;
 			background-color: #FF945C;
-			transition: 300ms ease-out;
+			transition: 300ms ease;
 			border-top-right-radius: 6upx;
 			border-top-left-radius: 6upx;
 

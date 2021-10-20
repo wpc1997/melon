@@ -136,8 +136,12 @@ var _default =
   data: function data() {
     return {
       StatusBar: this.StatusBar,
-      CustomBar: this.CustomBar };
-
+      CustomBar: this.CustomBar,
+      r: 0,
+      g: 0,
+      b: 0,
+      o: 0.1 //透明度
+    };
   },
   name: 'cu-custom',
   computed: {
@@ -148,6 +152,17 @@ var _default =
       var style = "height:".concat(CustomBar, "px;padding-top:").concat(StatusBar, "px;");
       if (this.bgImage) {
         style = "".concat(style, "background-image:url(").concat(bgImage, ");");
+      }
+      if (this.isAnimal) {
+        var v = 0;
+        var _o = 0.01;
+
+        _o = this.scrollTop / 200;
+        v = this.scrollTop / 0.65;
+
+        this.o = _o > 1 ? 1 : _o;
+        this.r = this.g = this.b = v > 255 ? 255 : v;
+        style = "".concat(style, "background-image: linear-gradient(rgba(").concat(this.r, ", ").concat(this.g, ", ").concat(this.b, ", 1), rgba(").concat(this.r, ", ").concat(this.g, ", ").concat(this.b, ", ").concat(this.o, "));");
       }
       return style;
     } },
@@ -171,7 +186,15 @@ var _default =
 
     isTap: {
       type: [Boolean, String],
-      default: false } },
+      default: false },
+
+    isAnimal: {
+      type: Boolean,
+      default: false },
+
+    scrollTop: {
+      type: Number,
+      default: 0 } },
 
 
   methods: {

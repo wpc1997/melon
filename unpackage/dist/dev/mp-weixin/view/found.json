@@ -1,5 +1,9 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "custom-tabs": "/components/custom-tabs",
+    "unused-card": "/components/unused-card",
+    "refresh": "/components/refresh"
+  }
 }

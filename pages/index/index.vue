@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 
-		
+
 
 		<!-- 顶部每日文案 -->
 		<cu-custom-title style="background-color: #FFFFFF;" bgColor="#FFFFFF" :isBack="false"></cu-custom-title>
@@ -15,11 +15,12 @@
 			</view>
 			<input :adjust-position="false" @tap="searchFocus" :focus="false" maxlength="300" cursor-spacing="10"
 				placeholder="输入关键词..."></input>
-			
-			<view class="cancel" @tap="outFocus" :class="isShowSearchPopup?'left-cancle':''" :style="[{marginRight: isShowSearchPopup?'10upx':'0'}]">{{isShowSearchPopup?'取消':''}}</view>
-			
+
+			<view class="cancel" @tap="outFocus" :class="isShowSearchPopup?'left-cancle':''"
+				:style="[{marginRight: isShowSearchPopup?'10upx':'0'}]">{{isShowSearchPopup?'取消':''}}</view>
+
 		</view>
-		
+
 
 		<!-- 主页轮播图 -->
 		<swiper class="card-swiper" :class="'square-dot'" :indicator-dots="true" :circular="true" :autoplay="true"
@@ -27,7 +28,7 @@
 			indicator-active-color="#FCD209">
 			<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
 				<view class="swiper-item">
-					<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>	
+					<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
 					<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false"
 						objectFit="cover" v-if="item.type=='video'"></video>
 				</view>
@@ -66,7 +67,7 @@
 
 
 		<!-- 弹出推荐搜索面板 -->
-		<view class="search-popup" :style="[{top:isShowSearchPopup?'0':'-100vh'}]">
+		<view class="search-popup" :style="[{top:isShowSearchPopup?'0':'-100vh'}]" @touchmove.stop.prevent="moveHandle">
 			<recommendSearch></recommendSearch>
 		</view>
 
@@ -95,37 +96,37 @@
 				CustomBar: this.CustomBar,
 				title: 'Hello',
 				cardCur: 0,
-				gridCol:5,
-				cuIconList:[{
+				gridCol: 5,
+				cuIconList: [{
 					cuIcon: 'cardboardfill',
 					color: 'red',
 					badge: 120,
 					name: '签到',
-					url:'../../view/registration',
+					url: '../../view/registration',
 				}, {
 					cuIcon: 'recordfill',
 					color: 'orange',
 					badge: 1,
 					name: '问答',
-					url:'../../view/answer',
+					url: '../../view/answer',
 				}, {
 					cuIcon: 'picfill',
 					color: 'yellow',
 					badge: 0,
 					name: '小组',
-					url:'../../view/channel',
+					url: '../../view/channel',
 				}, {
 					cuIcon: 'noticefill',
 					color: 'olive',
 					badge: 22,
 					name: '课堂',
-					url:'../../view/classroom',
+					url: '../../view/classroom',
 				}, {
 					cuIcon: 'upstagefill',
 					color: 'cyan',
 					badge: 0,
 					name: '寻宠',
-					url:'../../view/found',
+					url: '../../view/found',
 				}],
 				swiperList: [{
 					id: 0,
@@ -160,43 +161,46 @@
 		},
 		onLoad() {
 			uni.getImageInfo({
-			            src: 'http://chengzi.90czu.com/001c82a1-3bf6-43f7-bf98-fd8490cb3a751587084094424',
-			            success: function (image) {
-			                console.log('width:',image.width);
-			                console.log('height:',image.height);
-			            }
-			        });
+				src: 'http://chengzi.90czu.com/001c82a1-3bf6-43f7-bf98-fd8490cb3a751587084094424',
+				success: function(image) {
+					console.log('width:', image.width);
+					console.log('height:', image.height);
+				}
+			});
 		},
 		methods: {
 
 			//搜索输入框的focus事件
 			searchFocus() {
-				if(!this.isShowSearchPopup){
-					this.isShowSearchPopup=!this.isShowSearchPopup
+				if (!this.isShowSearchPopup) {
+					this.isShowSearchPopup = !this.isShowSearchPopup
 				}
 			},
 
 			//点击失去焦点
-			outFocus(){
-				this.isShowSearchPopup=false
+			outFocus() {
+				this.isShowSearchPopup = false
 			},
 
 			// cardSwiper
 			cardSwiper(e) {
 				this.cardCur = e.detail.current
 			},
-			
+
 			//跳转至小组列表页
-			toChannelList(){
+			toChannelList() {
 				uni.navigateTo({
-					url:'../../view/channel-list'
+					url: '../../view/channel-list'
 				})
 			},
-			
-			girdClick(item,index){
+
+			girdClick(item, index) {
 				uni.navigateTo({
-					url:item.url
+					url: item.url
 				})
+			},
+			moveHandle() {
+				return false
 			}
 		}
 	};
@@ -204,13 +208,15 @@
 
 
 <style lang="scss" scoped>
-	.left-cancle{
-		width:100upx!important;
+	.left-cancle {
+		width: 100upx !important;
 		text-indent: 10upx;
 	}
+
 	.content {
 		position: relative;
-		.search-popup{
+
+		.search-popup {
 			position: fixed;
 			top: -100vh;
 			transition: 500ms ease;
@@ -221,6 +227,7 @@
 			height: 100vh;
 			overflow: hidden;
 		}
+
 		.cu-bar.input {
 			padding-right: 0 !important;
 		}
@@ -229,7 +236,8 @@
 			z-index: 9999;
 			// padding: 0 24upx;
 			position: sticky;
-			.cancel{
+
+			.cancel {
 				width: 0;
 				text-align: left;
 				height: 100%;
@@ -238,6 +246,7 @@
 				transition-delay: 0;
 				transition: 500ms all;
 			}
+
 			.action {
 				padding-left: 30upx;
 				border-top-left-radius: 40upx;
@@ -263,8 +272,8 @@
 				border-top-right-radius: 40upx;
 				border-bottom-right-radius: 40upx;
 			}
-			
-			
+
+
 		}
 
 		.card-swiper {

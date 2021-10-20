@@ -222,6 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 {
   components: {
     areaGrid: areaGrid,
@@ -339,6 +340,9 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: item.url });
 
+    },
+    moveHandle: function moveHandle() {
+      return false;
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

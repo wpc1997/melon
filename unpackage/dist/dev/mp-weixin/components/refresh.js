@@ -137,12 +137,17 @@ var _default =
   name: "refresh",
   props: {
     scrollHeight: {
-      type: Number,
-      default: 0 } },
+      type: [Number, String],
+      default: 0 },
+
+    isFull: {
+      type: Boolean,
+      default: false } },
 
 
   data: function data() {
     return {
+      CustomBar: this.CustomBar,
       triggered: false,
       notice: '下拉即可刷新...' };
 
@@ -151,6 +156,7 @@ var _default =
 
     onScroll: function onScroll(e) {
       console.log("onScroll", e.detail);
+      this.$emit('onScroll', e);
     },
 
     //自定义下拉刷新控件被下拉时触发

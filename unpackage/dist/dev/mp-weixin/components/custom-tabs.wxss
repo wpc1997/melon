@@ -24,6 +24,14 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.yes-Avg.data-v-09311522 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.no-Avg.data-v-09311522 {
+  padding: 0 32rpx;
+}
 .custom-tabs.data-v-09311522 {
   position: relative;
   width: 100%;
@@ -56,8 +64,8 @@
   width: 40rpx;
   height: 6rpx;
   background-color: #FF945C;
-  -webkit-transition: 300ms ease-out;
-  transition: 300ms ease-out;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
   border-top-right-radius: 6rpx;
   border-top-left-radius: 6rpx;
 }

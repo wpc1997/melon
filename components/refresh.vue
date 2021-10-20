@@ -3,8 +3,8 @@
 
 		<!-- 自定义封装的局部下拉刷新组件 -->
 
-		<scroll-view class="refresh-scroll" :style="{height:scrollHeight+'px'}" scroll-y="true" refresher-enabled="true"
-			refresher-default-style="none" :refresher-triggered="triggered" :refresher-threshold="48"
+		<scroll-view class="refresh-scroll" :style="{height:isFull?'100vh':(scrollHeight+'px')}" scroll-y="false" refresher-enabled="true"
+			refresher-default-style="none" :refresher-triggered="triggered" :refresher-threshold="isFull?CustomBar:48"
 			@refresherpulling="onPulling" @refresherrefresh="onRefresh" @refresherrestore="onRestore"
 			@refresherabort="onAbort" @scroll="onScroll" @scrolltolower="scrolltolower">
 
@@ -15,18 +15,23 @@
 		</scroll-view>
 	</view>
 </template>
-
+ 
 <script>
 	export default {
 		name: "refresh",
 		props: {
 			scrollHeight: {
-				type: Number,
+				type: [Number,String],
 				default: 0
+			},
+			isFull:{
+				type: Boolean,
+				default: false
 			}
 		},
 		data() {
 			return {
+				CustomBar: this.CustomBar,
 				triggered: false,
 				notice: '下拉即可刷新...'
 			};
@@ -35,6 +40,7 @@
 
 			onScroll(e) {
 				console.log("onScroll", e.detail);
+				this.$emit('onScroll',e)
 			},
 
 			//自定义下拉刷新控件被下拉时触发
@@ -87,7 +93,7 @@
 	.refresh {
 
 		width: 100%;
-
+		overflow: hidden;
 		&-scroll {
 			position: relative;
 

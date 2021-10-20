@@ -130,37 +130,233 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! ../components/custom-tabs.vue */ 375));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var unusedCard = function unusedCard() {__webpack_require__.e(/*! require.ensure | components/unused-card */ "components/unused-card").then((function () {return resolve(__webpack_require__(/*! ../components/unused-card.vue */ 417));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! ../components/refresh.vue */ 382));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  components: {
+    customTabs: customTabs,
+    unusedCard: unusedCard,
+    refresh: refresh },
+
+  data: function data() {var _ref;
+    return _ref = {
+
+      CustomBar: this.CustomBar,
       isShowSearchPopup: false,
-      CustomBar: this.CustomBar };
+      tabIndex: 0,
+      tabs: [{
+        title: '紧急',
+        list: [
+        [
+        {
+          id: 0,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '85',
+          consult: '3',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '755',
+          consult: '104',
+          createTime: '刚刚' }],
+
+
+        [
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '545',
+          consult: '32',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '16',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '105',
+          consult: '89',
+          createTime: '刚刚' }]] },
+
+
+
+
+
+      {
+        title: '最新',
+        list: [
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '9',
+          createTime: '刚刚' }],
+
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '16',
+          createTime: '刚刚' }]] }],
+
+
+
+
+
+      scrollHeight: 0,
+      current: 0 }, _defineProperty(_ref, "tabIndex",
+    0), _defineProperty(_ref, "marginTop",
+    0), _defineProperty(_ref, "isHidden",
+    true), _defineProperty(_ref, "scrollTop",
+    0), _ref;
 
   },
+  onReady: function onReady() {
+    var _this = this;
+    var query = uni.createSelectorQuery().in(this);
+
+    query.select('#tabs').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this.marginTop = data.height;
+
+    }).exec();
+    query.select('.found').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this.scrollHeight = data.height - _this.marginTop - _this.CustomBar;
+
+    }).exec();
+  },
   methods: {
+
+
+    //接收到tab栏传过来的数据和索引，来渲染和控制swiper的双向滑动，如果swiper里面已经有内容，则不渲染数据
+    clickTab: function clickTab(item, index) {
+      this.current = index;
+    },
+
+
+    //swiper滑动事件
+    change: function change(e) {
+
+      console.log(e);
+      this.tabIndex = e.detail.current;
+
+    },
 
     //搜索输入框的focus事件
     searchFocus: function searchFocus() {
@@ -172,7 +368,37 @@ var _default =
     //点击失去焦点
     outFocus: function outFocus() {
       this.isShowSearchPopup = false;
+    },
+
+    //页面滚动事件监听
+    onScroll: function onScroll(e) {
+      var _this = this;
+      var query = uni.createSelectorQuery().in(this);
+      if (_this.scrollTop > e.detail.scrollTop) {
+        if (e.detail.scrollTop < 10) {
+          _this.scrollTop = 0;
+        } else {
+          _this.scrollTop = e.detail.scrollTop;
+        }
+      } else {
+        _this.scrollTop = e.detail.scrollTop;
+      }
+
+      console.log(_this.scrollTop);
+      query.select('#tabs').boundingClientRect(function (data) {
+
+        // console.log(data)
+
+        if (data.top <= _this.CustomBar + 20) {
+          _this.isHidden = false;
+        } else {
+          _this.isHidden = true;
+        }
+
+
+      }).exec();
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
