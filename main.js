@@ -5,6 +5,7 @@ import cuCustomHeader from './colorui/components/cu-custom-header.vue'
 import cuCustomSearch from './colorui/components/cu-custom-search.vue'
 import cuCustomFoot from './colorui/components/cu-custom-foot.vue'
 import cuCustomTitle from './colorui/components/cu-custom-title.vue'
+import cuCustomAnimal from './colorui/components/cu-custom-animal.vue'
 import store from './store'
 
 
@@ -13,6 +14,7 @@ Vue.component('cu-custom-header',cuCustomHeader)
 Vue.component('cu-custom-foot',cuCustomFoot)
 Vue.component('cu-custom-title',cuCustomTitle)
 Vue.component('cu-custom-search',cuCustomSearch)
+Vue.component('cu-custom-animal',cuCustomAnimal)
 Vue.prototype.$store = store
 
 Vue.config.productionTip = false

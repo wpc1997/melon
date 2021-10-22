@@ -1,7 +1,7 @@
 <template>
 	<view class="channel">
 		<cu-custom bgColor="bg-gradual-white" :isBack="true">
-			<block slot="content">频道</block>
+			<block slot="content">小组</block>
 		</cu-custom>
 		
 		<!-- 热门模块 -->

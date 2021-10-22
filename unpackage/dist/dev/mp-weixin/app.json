@@ -84,6 +84,7 @@
     "cu-custom-header": "/colorui/components/cu-custom-header",
     "cu-custom-foot": "/colorui/components/cu-custom-foot",
     "cu-custom-title": "/colorui/components/cu-custom-title",
-    "cu-custom-search": "/colorui/components/cu-custom-search"
+    "cu-custom-search": "/colorui/components/cu-custom-search",
+    "cu-custom-animal": "/colorui/components/cu-custom-animal"
   }
 }

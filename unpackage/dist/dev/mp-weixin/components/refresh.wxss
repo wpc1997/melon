@@ -27,6 +27,8 @@
 .refresh.data-v-3ecbddf0 {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 9;
 }
 .refresh-scroll.data-v-3ecbddf0 {
   position: relative;

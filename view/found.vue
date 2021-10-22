@@ -1,5 +1,5 @@
 <template>
-	<!-- 寻宠页面 -->
+	<!-- 宠物闲置页面 -->
 	<view class="found-page">
 		<view class="custom-fixed">
 			<cu-custom bgColor="text-white " :isBack="true" :backColor="'white'" :isAnimal="true" :scrollTop="scrollTop"
