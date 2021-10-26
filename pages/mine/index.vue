@@ -61,7 +61,7 @@
 		
 		<!-- 功能服务列表 -->
 		<view class="mine-list">
-			<areaGrid :list="serviceList" :gridCol="4"></areaGrid>
+			<areaGrid :list="serviceList" :gridCol="4" @girdClick="toService()"></areaGrid>
 		</view>
 		
 		<!-- 功能服务列表 -->
@@ -143,37 +143,43 @@
 						cuIcon: 'goods',
 						imgUrl:'',
 						radius: '50%',
-						name: '今日签到'
+						name: '今日签到',
+						url:'',
 					},
 					{
 						cuIcon: 'favor',
 						imgUrl:'',
 						radius: '50%',
-						name: '我的收藏'
+						name: '我的收藏',
+						url:'',
 					},
 					{
 						cuIcon: 'group',
 						imgUrl:'',
 						radius: '50%',
-						name: '我的小组'
+						name: '我的小组',
+						url:'',
 					},
 					{
 						cuIcon: 'community',
 						imgUrl:'',
 						radius: '50%',
-						name: '我的口袋'
+						name: '我的口袋',
+						url:'../../view/cart',
 					},
 					{
 						cuIcon: 'friendfavor',
 						imgUrl:'',
 						radius: '50%',
-						name: '与我相关'
+						name: '与我相关',
+						url:'',
 					},
 					{
 						cuIcon: 'write',
 						imgUrl:'',
 						radius: '50%',
-						name: '文案投稿'
+						name: '文案投稿',
+						url:'',
 					},
 				],
 				operateList:[
@@ -181,25 +187,29 @@
 						cuIcon: 'question',
 						imgUrl:'',
 						radius: '50%',
-						name: '资质认证'
+						name: '资质认证',
+						url:'',
 					},
 					{
 						cuIcon: 'question',
 						imgUrl:'',
 						radius: '50%',
-						name: '申请开店'
+						name: '申请开店',
+						url:'',
 					},
 					{
 						cuIcon: 'question',
 						imgUrl:'',
 						radius: '50%',
-						name: '意见反馈'
+						name: '意见反馈',
+						url:'',
 					},
 					{
 						cuIcon: 'question',
 						imgUrl:'',
 						radius: '50%',
-						name: '联系我们'
+						name: '联系我们',
+						url:'',
 					},
 				]
 			}
@@ -254,38 +264,12 @@
 			},
 
 			//跳转到具体服务页
-			toService(type) {
-				switch (type) {
-					case 'favor':
-						uni.navigateTo({
-							url: '../../view/collection'
-						})
-						break
-					case 'group':
-						uni.navigateTo({
-							url: '../../view/groups?type=1'
-						})
-						break
-					case 'community':
-						uni.navigateTo({
-							url: '../../view/groups?type=2'
-						})
-						break
-					case 'friendfavor':
-						uni.navigateTo({
-							url: '../../view/iRelat'
-						})
-						break
-					case 'write':
-						uni.navigateTo({
-							url: '../../view/contribute'
-						})
-						break
-					case 'goods':
-						break
-					case 'question':
-						break
-				}
+			toService(item) {
+				console.log(item)
+				uni.navigateTo({
+					url: item.url
+				})
+				
 			}
 		}
 

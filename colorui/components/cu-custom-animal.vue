@@ -41,7 +41,7 @@
 					_o = this.scrollTop / 200
 					v = this.scrollTop / 0.65
 				
-					this.o = _o > 1 ? 1 : _o
+					this.o = (1 - _o) < 0 ? 0 : (1 - _o)
 					style =
 						`${style}background-color:rgba(${this.customColor.r},${this.customColor.g},${this.customColor.b},${this.o})`;
 				}

@@ -145,7 +145,7 @@
 					if (index < date.getDay()) {
 						it.time = parseInt(item.slice(-2))
 						it.isSign = 1
-						it.color = '#FF945C'
+						it.color = '#F8D347'
 						it.isToday = false
 					}
 					if (index === date.getDay()) {
@@ -285,7 +285,7 @@
 				top: 0;
 				left: 0;
 				z-index: 0;
-				background-image: linear-gradient(0deg, #ffffff, #FF945C);
+				background-image: linear-gradient(0deg, #ffffff,#F8D347);
 			}
 
 		}
@@ -305,7 +305,7 @@
 				height: 300upx;
 				border-radius: 50%;
 				font-weight: 450;
-				background-image: linear-gradient(180deg, #FF945C, #FFF6F2);
+				background-image: linear-gradient(180deg, #F8D347, #FFF6F2);
 				color: #FF6600;
 			}
 
@@ -314,7 +314,7 @@
 				bottom: 30%;
 				left: 50%;
 				transform: translateX(-50%);
-				color: #FF945C;
+				color: #F8D347;
 			}
 
 			&-record {
@@ -349,7 +349,7 @@
 		backface-visibility: hidden;
 		display: flex;
 		flex-flow: column;
-		background-image: linear-gradient(0deg, #ffffff, #FF945C);
+		background-image: linear-gradient(0deg, #ffffff, #F8D347);
 
 		&-calendar {
 			background-color: #FFFFFF;

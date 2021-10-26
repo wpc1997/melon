@@ -44,7 +44,7 @@
 }
 .found-page .custom-fixed.data-v-1c1458b4 {
   position: fixed;
-  z-index: 9;
+  z-index: 12;
 }
 .found.data-v-1c1458b4 {
   height: 100vh;

@@ -43,7 +43,7 @@
 }
 .custom-tabs .active.data-v-09311522 {
   font-weight: 400;
-  color: #FF945C;
+  color: #F8D347;
 }
 .custom-tabs-tab.data-v-09311522 {
   display: -webkit-box;
@@ -63,7 +63,7 @@
   bottom: 0;
   width: 40rpx;
   height: 6rpx;
-  background-color: #FF945C;
+  background-color: #F8D347;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   border-top-right-radius: 6rpx;

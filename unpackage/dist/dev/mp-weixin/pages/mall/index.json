@@ -2,6 +2,8 @@
   "usingComponents": {
     "refresh": "/components/refresh",
     "area-grid": "/pages/index/components/area-grid",
-    "kill": "/pages/mall/components/kill"
+    "kill": "/pages/mall/components/kill",
+    "custom-tabs": "/components/custom-tabs",
+    "unused-card": "/components/unused-card"
   }
 }

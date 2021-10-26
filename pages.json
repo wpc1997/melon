@@ -165,6 +165,15 @@
             }
             
         }
+        ,{
+            "path" : "view/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"permission": {
 		"scope.userLocation": {

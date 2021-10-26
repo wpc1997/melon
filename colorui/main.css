@@ -3925,6 +3925,9 @@ scroll-view.cu-steps .cu-item {
 	font-size: 80%;
 	margin-right: 4upx;
 }
+.text-price{
+	color: #F95703;
+}
 
 .text-cut {
 	text-overflow: ellipsis;

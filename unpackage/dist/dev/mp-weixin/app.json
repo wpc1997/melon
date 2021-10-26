@@ -30,7 +30,8 @@
     "view/channel-room",
     "view/registration",
     "view/classroom",
-    "view/found"
+    "view/found",
+    "view/cart"
   ],
   "subPackages": [],
   "window": {

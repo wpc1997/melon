@@ -26,6 +26,8 @@
 /* 文章场景相关 */
 .mall-page.data-v-4ac82a60 {
   height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
   max-height: 100vh;
   position: relative;
   background-color: #F5F5F5;
@@ -34,15 +36,24 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 0;
+  z-index: 1;
   border-radius: 0 0 1000px 1000px/60%;
   width: 100vw;
   height: 382rpx;
 }
+.mall-page-head-bg-white.data-v-4ac82a60 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0 0 1000px 1000px/60%;
+  width: 100vw;
+  height: 382rpx;
+  background-color: #FFFFFF;
+}
 .mall.data-v-4ac82a60 {
   position: relative;
   z-index: 2;
-  height: 150vh;
 }
 .mall-search.data-v-4ac82a60 {
   position: -webkit-sticky;
@@ -57,7 +68,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  z-index: 2;
+  z-index: 9;
 }
 .mall-search-input.data-v-4ac82a60 {
   z-index: 2;
@@ -103,6 +114,11 @@
   height: 100%;
   border-radius: 12rpx;
 }
+.mall-area.data-v-4ac82a60 {
+  margin: 24rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
 .mall-kill.data-v-4ac82a60 {
   position: relative;
   margin: 24rpx auto;
@@ -120,6 +136,164 @@
   background: #FFFFFF;
   border-radius: 16rpx;
 }
+.mall-recommend.data-v-4ac82a60 {
+  margin: 24rpx auto;
+  width: 702rpx;
+  min-height: 320rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
+.mall-recommend-left.data-v-4ac82a60 {
+  border-right: 2rpx solid #E7E7E7;
+  padding: 24rpx 20rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.mall-recommend-left-head.data-v-4ac82a60 {
+  padding-bottom: 12rpx;
+}
+.mall-recommend-left-head > text.data-v-4ac82a60:first-child {
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #222222;
+  line-height: 44rpx;
+}
+.mall-recommend-left-head > text.data-v-4ac82a60:last-child {
+  margin-left: 16rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #888888;
+  line-height: 36rpx;
+}
+.mall-recommend-left-bottom.data-v-4ac82a60 {
+  padding-top: 12rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+}
+.mall-recommend-left-bottom-goods.data-v-4ac82a60 {
+  width: 152rpx;
+  height: 152rpx;
+}
+.mall-recommend-left-bottom-goods > image.data-v-4ac82a60 {
+  width: 152rpx;
+  height: 152rpx;
+  display: block;
+}
+.mall-recommend-left-bottom-goods > view.data-v-4ac82a60 {
+  padding: 24rpx 6rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.mall-recommend-left-bottom-goods > view > text.data-v-4ac82a60:first-child {
+  font-weight: 500;
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.mall-recommend-left-bottom-goods > view > text.cut-line-price.data-v-4ac82a60 {
+  text-decoration: line-through;
+}
+.mall-recommend-left-bottom-goods > view > text.cut-line-price.data-v-4ac82a60::before {
+  content: "¥";
+  font-size: 80%;
+  margin-right: 4rpx;
+}
+.mall-recommend-left-bottom-goods > view > text.data-v-4ac82a60:last-child {
+  color: #888888;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 20rpx;
+  line-height: 36rpx;
+}
+.mall-recommend-right.data-v-4ac82a60 {
+  padding: 24rpx 20rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.mall-recommend-right-head.data-v-4ac82a60 {
+  padding-bottom: 12rpx;
+}
+.mall-recommend-right-head > text.data-v-4ac82a60:first-child {
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #222222;
+  line-height: 44rpx;
+}
+.mall-recommend-right-head > text.data-v-4ac82a60:last-child {
+  margin-left: 16rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #888888;
+  line-height: 36rpx;
+}
+.mall-recommend-right-bottom.data-v-4ac82a60 {
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 12rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.mall-recommend-right-bottom-goods.data-v-4ac82a60 {
+  width: 144rpx;
+  height: 204rpx;
+}
+.mall-recommend-right-bottom-goods > image.data-v-4ac82a60 {
+  width: 144rpx;
+  height: 204rpx;
+  display: block;
+}
+.mall-tabs.data-v-4ac82a60 {
+  background-color: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+}
+.mall-radius.data-v-4ac82a60 {
+  border-radius: 16rpx 16rpx 0 0;
+  background-color: #FFFFFF;
+  height: 30rpx;
+  width: 100%;
+}
+.mall-list.data-v-4ac82a60 {
+  background-color: #FFFFFF;
+}
+.swiper-lists.data-v-4ac82a60 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+}
+.swiper-list.data-v-4ac82a60 {
+  margin-bottom: 60rpx;
+}
+.swiper-hidden.data-v-4ac82a60 {
+  overflow-y: hidden !important;
+}
+.swiper-auto.data-v-4ac82a60 {
+  overflow-y: scroll !important;
+}
 .fade-animal.data-v-4ac82a60 {
   -webkit-transition: 1500ms ease;
   transition: 1500ms ease;
@@ -133,14 +307,15 @@
   height: 272rpx;
 }
 .tower-swiper .tower-item.data-v-4ac82a60 {
-  -webkit-transform: scale(calc(0.5 + var(--index) / 10)) translateX(calc(-38%));
-          transform: scale(calc(0.5 + var(--index) / 10)) translateX(calc(-38%));
+  -webkit-transform: scale(calc(0.5 + var(--index) / 10));
+          transform: scale(calc(0.5 + var(--index) / 10));
   margin-left: calc(var(--left) * 100rpx - 150rpx);
   z-index: var(--index);
 }
 .tower-swiper .tower-item.data-v-4ac82a60 {
-  width: 550rpx !important;
-  height: 300rpx !important;
+  width: 600rpx !important;
+  height: 325rpx !important;
+  left: 203rpx;
 }
 .tower-swiper .tower-item.none.data-v-4ac82a60 {
   opacity: 0.9 !important;

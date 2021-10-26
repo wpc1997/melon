@@ -130,7 +130,86 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! ../../components/refresh.vue */ 333));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! ../index/components/area-grid.vue */ 298));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var kill = function kill() {__webpack_require__.e(/*! require.ensure | pages/mall/components/kill */ "pages/mall/components/kill").then((function () {return resolve(__webpack_require__(/*! ./components/kill.vue */ 340));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var refresh = function refresh() {__webpack_require__.e(/*! require.ensure | components/refresh */ "components/refresh").then((function () {return resolve(__webpack_require__(/*! ../../components/refresh.vue */ 341));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! ../index/components/area-grid.vue */ 306));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var customTabs = function customTabs() {__webpack_require__.e(/*! require.ensure | components/custom-tabs */ "components/custom-tabs").then((function () {return resolve(__webpack_require__(/*! ../../components/custom-tabs.vue */ 348));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var unusedCard = function unusedCard() {__webpack_require__.e(/*! require.ensure | components/unused-card */ "components/unused-card").then((function () {return resolve(__webpack_require__(/*! ../../components/unused-card.vue */ 355));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var kill = function kill() {__webpack_require__.e(/*! require.ensure | pages/mall/components/kill */ "pages/mall/components/kill").then((function () {return resolve(__webpack_require__(/*! ./components/kill.vue */ 362));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -230,7 +309,9 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     refresh: refresh,
     areaGrid: areaGrid,
-    kill: kill },
+    kill: kill,
+    customTabs: customTabs,
+    unusedCard: unusedCard },
 
   data: function data() {
     return {
@@ -239,15 +320,190 @@ __webpack_require__.r(__webpack_exports__);
       towerStart: 0,
       direction: '',
       isShowSwiper: false,
+      tabIndex: 0,
+      isHidden: true,
+      current: 0, //当前所在滑块的 index
+      searchHeight: 0,
+      backgroundCustom: "background-color:rgba(248,211,71,1)",
+      backgroundCustomWhite: "background-color:rgba(255,255,255,0)",
+      backgroundCustomgray: "background-color:rgba(255,255,255,1)",
       rgbaColor: {
         r: 255,
         g: 148,
         b: 92,
         o: 1 },
 
+      list: [],
+      tabs: [{
+        title: '推荐',
+        list: [
+        [
+        {
+          id: 0,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '85',
+          consult: '3',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '755',
+          consult: '104',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '755',
+          consult: '104',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '755',
+          consult: '104',
+          createTime: '刚刚' }],
+
+
+        [
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '545',
+          consult: '32',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '16',
+          createTime: '刚刚' },
+
+        {
+          id: 1,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '105',
+          consult: '89',
+          createTime: '刚刚' }]] },
+
+
+
+
+
+      {
+        title: '热门',
+        list: [
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '9',
+          createTime: '刚刚' },
+
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '9',
+          createTime: '刚刚' }],
+
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '16',
+          createTime: '刚刚' }]] },
+
+
+
+
+      {
+        title: '最新',
+        list: [
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '9',
+          createTime: '刚刚' }],
+
+
+        [
+        {
+          id: 3,
+          title: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡',
+          tag: '全新',
+          coverImg: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          userName: '白萝卜',
+          avatar: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          price: '136',
+          consult: '16',
+          createTime: '刚刚' }]] }],
+
+
+
+
+
       scrollTop: 0,
       scrollHeight: 0,
-      cuIconList: [{
+      swiperHeight: 0,
+      radiusHeight: 0,
+      tabHeight: 0,
+      cuIconList: [
+      {
         cuIcon: 'cardboardfill',
         color: 'red',
         badge: 120,
@@ -308,7 +564,9 @@ __webpack_require__.r(__webpack_exports__);
         name: '寻宠',
         url: '../../view/found' }],
 
-      swiperList: [{
+
+      swiperList: [
+      {
         id: 0,
         type: 'image',
         url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' },
@@ -322,6 +580,7 @@ __webpack_require__.r(__webpack_exports__);
         url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' }] };
 
 
+
   },
 
   onLoad: function onLoad() {var _this2 = this;
@@ -330,14 +589,35 @@ __webpack_require__.r(__webpack_exports__);
       _this2.isShowSwiper = true;
     }, 500);
   },
-  onReady: function onReady() {
+  onReady: function onReady() {var _this3 = this;
     var _this = this;
     var query = uni.createSelectorQuery().in(this);
+    var radius = 0;
+    var tab = 0;
 
+    query.select('.mall-search').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this.searchHeight = data.height;
+
+    }).exec();
+    query.select('.mall-radius').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this3.radiusHeight = data.height;
+
+    }).exec();
+    query.select('.mall-tabs').boundingClientRect(function (data) {
+
+      console.log(data);
+      _this3.tabHeight = data.height;
+
+    }).exec();
     query.select('.mall-page').boundingClientRect(function (data) {
 
       console.log(data);
       _this.scrollHeight = data.height - _this.CustomBar;
+      _this.swiperHeight = data.height - _this.CustomBar - _this.searchHeight - _this3.radiusHeight - _this3.tabHeight;
 
     }).exec();
   },
@@ -345,6 +625,13 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
 
 
+    //swiper滑动事件
+    change: function change(e) {
+
+      console.log(e);
+      this.tabIndex = e.detail.current;
+
+    },
     //金刚区点击事件
     girdClick: function girdClick(url) {
       console.log(url);
@@ -353,6 +640,8 @@ __webpack_require__.r(__webpack_exports__);
     //页面滚动事件监听
     onScroll: function onScroll(e) {
       var _this = this;
+      var query = uni.createSelectorQuery().in(this);
+      _this.isHidden = false;
       if (_this.scrollTop > e.detail.scrollTop) {
         if (e.detail.scrollTop < 10) {
           _this.scrollTop = 0;
@@ -363,8 +652,41 @@ __webpack_require__.r(__webpack_exports__);
         _this.scrollTop = e.detail.scrollTop;
       }
 
+
+      var _o = this.scrollTop / 250;
+
+      var v = 255 - this.scrollTop / 0.65 < 245 ? 245 : 255 - this.scrollTop / 0.65;
+
+      var o = 1 - _o < 0 ? 0 : 1 - _o;
+
+      _o = _o < 0.1 ? 0 : _o - 0.07;
+
+      this.backgroundCustom = "background-color:rgba(248,211,71,".concat(o, ")");
+
+      this.backgroundCustomWhite = "background-color:rgba(255,255,255,".concat(_o, ")");
+
+      this.backgroundCustomgray = "background-color:rgba(".concat(v, ",").concat(v, ",").concat(v, ",1)");
+
+      query.select('#tabs').boundingClientRect(function (data) {
+
+        // console.log(data)
+
+        if (data.top <= _this.CustomBar + 20 + _this.tabHeight + _this.radiusHeight) {
+          _this.isHidden = false;
+        } else {
+          _this.isHidden = true;
+        }
+
+
+      }).exec();
+
     },
 
+    //接收到tab栏传过来的数据和索引，来渲染和控制swiper的双向滑动，如果swiper里面已经有内容，则不渲染数据
+    clickTab: function clickTab(item, index) {
+      this.list = item.list;
+      this.current = index;
+    },
 
     // cardSwiper
     cardSwiper: function cardSwiper(e) {

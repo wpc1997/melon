@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var classroomCard = function classroomCard() {__webpack_require__.e(/*! require.ensure | view/components/classroom-card */ "view/components/classroom-card").then((function () {return resolve(__webpack_require__(/*! ./components/classroom-card.vue */ 424));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var classroomCard = function classroomCard() {__webpack_require__.e(/*! require.ensure | view/components/classroom-card */ "view/components/classroom-card").then((function () {return resolve(__webpack_require__(/*! ./components/classroom-card.vue */ 439));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

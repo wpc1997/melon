@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userInfo = function userInfo() {__webpack_require__.e(/*! require.ensure | pages/mine/components/user-info */ "pages/mine/components/user-info").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/user-info.vue */ 354));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 298));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var petCard = function petCard() {__webpack_require__.e(/*! require.ensure | pages/mine/components/pet-card */ "pages/mine/components/pet-card").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/pet-card.vue */ 361));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userInfo = function userInfo() {__webpack_require__.e(/*! require.ensure | pages/mine/components/user-info */ "pages/mine/components/user-info").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/user-info.vue */ 376));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var areaGrid = function areaGrid() {__webpack_require__.e(/*! require.ensure | pages/index/components/area-grid */ "pages/index/components/area-grid").then((function () {return resolve(__webpack_require__(/*! @/pages/index/components/area-grid */ 306));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var petCard = function petCard() {__webpack_require__.e(/*! require.ensure | pages/mine/components/pet-card */ "pages/mine/components/pet-card").then((function () {return resolve(__webpack_require__(/*! @/pages/mine/components/pet-card.vue */ 383));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -275,37 +275,43 @@ __webpack_require__.r(__webpack_exports__);
         cuIcon: 'goods',
         imgUrl: '',
         radius: '50%',
-        name: '今日签到' },
+        name: '今日签到',
+        url: '' },
 
       {
         cuIcon: 'favor',
         imgUrl: '',
         radius: '50%',
-        name: '我的收藏' },
+        name: '我的收藏',
+        url: '' },
 
       {
         cuIcon: 'group',
         imgUrl: '',
         radius: '50%',
-        name: '我的小组' },
+        name: '我的小组',
+        url: '' },
 
       {
         cuIcon: 'community',
         imgUrl: '',
         radius: '50%',
-        name: '我的口袋' },
+        name: '我的口袋',
+        url: '../../view/cart' },
 
       {
         cuIcon: 'friendfavor',
         imgUrl: '',
         radius: '50%',
-        name: '与我相关' },
+        name: '与我相关',
+        url: '' },
 
       {
         cuIcon: 'write',
         imgUrl: '',
         radius: '50%',
-        name: '文案投稿' }],
+        name: '文案投稿',
+        url: '' }],
 
 
       operateList: [
@@ -313,25 +319,29 @@ __webpack_require__.r(__webpack_exports__);
         cuIcon: 'question',
         imgUrl: '',
         radius: '50%',
-        name: '资质认证' },
+        name: '资质认证',
+        url: '' },
 
       {
         cuIcon: 'question',
         imgUrl: '',
         radius: '50%',
-        name: '申请开店' },
+        name: '申请开店',
+        url: '' },
 
       {
         cuIcon: 'question',
         imgUrl: '',
         radius: '50%',
-        name: '意见反馈' },
+        name: '意见反馈',
+        url: '' },
 
       {
         cuIcon: 'question',
         imgUrl: '',
         radius: '50%',
-        name: '联系我们' }] };
+        name: '联系我们',
+        url: '' }] };
 
 
 
@@ -386,37 +396,11 @@ __webpack_require__.r(__webpack_exports__);
     },
 
     //跳转到具体服务页
-    toService: function toService(type) {
-      switch (type) {
-        case 'favor':
-          uni.navigateTo({
-            url: '../../view/collection' });
+    toService: function toService(item) {
+      console.log(item);
+      uni.navigateTo({
+        url: item.url });
 
-          break;
-        case 'group':
-          uni.navigateTo({
-            url: '../../view/groups?type=1' });
-
-          break;
-        case 'community':
-          uni.navigateTo({
-            url: '../../view/groups?type=2' });
-
-          break;
-        case 'friendfavor':
-          uni.navigateTo({
-            url: '../../view/iRelat' });
-
-          break;
-        case 'write':
-          uni.navigateTo({
-            url: '../../view/contribute' });
-
-          break;
-        case 'goods':
-          break;
-        case 'question':
-          break;}
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

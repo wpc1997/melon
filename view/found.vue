@@ -296,7 +296,7 @@
 	.found-page {
 		.custom-fixed {
 			position: fixed;
-			z-index: 9;
+			z-index: 12;
 		}
 	}
 

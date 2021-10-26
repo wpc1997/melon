@@ -123,8 +123,8 @@
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: -webkit-linear-gradient(bottom, #ffffff, #FF945C);
-  background-image: linear-gradient(0deg, #ffffff, #FF945C);
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #F8D347);
+  background-image: linear-gradient(0deg, #ffffff, #F8D347);
 }
 .registration-panel.data-v-319fc6c5 {
   -webkit-box-flex: 1;
@@ -155,8 +155,8 @@
   height: 300rpx;
   border-radius: 50%;
   font-weight: 450;
-  background-image: -webkit-linear-gradient(top, #FF945C, #FFF6F2);
-  background-image: linear-gradient(180deg, #FF945C, #FFF6F2);
+  background-image: -webkit-linear-gradient(top, #F8D347, #FFF6F2);
+  background-image: linear-gradient(180deg, #F8D347, #FFF6F2);
   color: #FF6600;
 }
 .registration-panel-text.data-v-319fc6c5 {
@@ -165,7 +165,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #FF945C;
+  color: #F8D347;
 }
 .registration-panel-record.data-v-319fc6c5 {
   position: absolute;
@@ -201,8 +201,8 @@
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
           flex-flow: column;
-  background-image: -webkit-linear-gradient(bottom, #ffffff, #FF945C);
-  background-image: linear-gradient(0deg, #ffffff, #FF945C);
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #F8D347);
+  background-image: linear-gradient(0deg, #ffffff, #F8D347);
 }
 .records-calendar.data-v-319fc6c5 {
   background-color: #FFFFFF;

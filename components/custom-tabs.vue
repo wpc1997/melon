@@ -10,6 +10,7 @@
 
 		<view id="line" class="custom-tabs-line" :class="{'tranfroms':isAnimal}" :style="[{left:tabLeft+'px'}]"></view>
 
+
 	</view>
 </template>
 
@@ -30,7 +31,7 @@
 			isAvg:{
 				type:Boolean,
 				default: false
-			}
+			},
 		},
 		data() {
 			return {
@@ -108,7 +109,7 @@
 		
 		.active{
 			font-weight: 400;
-			color: #FF945C;
+			color: #F8D347;
 		}
 
 		&-tab {
@@ -129,7 +130,7 @@
 			bottom: 0;
 			width: 40upx;
 			height: 6upx;
-			background-color: #FF945C;
+			background-color: #F8D347;
 			transition: 300ms ease;
 			border-top-right-radius: 6upx;
 			border-top-left-radius: 6upx;
