@@ -144,7 +144,7 @@
 						imgUrl:'',
 						radius: '50%',
 						name: '今日签到',
-						url:'',
+						url:'../../view/registration',
 					},
 					{
 						cuIcon: 'favor',

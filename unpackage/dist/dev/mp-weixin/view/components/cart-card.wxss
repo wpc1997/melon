@@ -30,13 +30,16 @@
   background-color: #FFFFFF;
 }
 .cart-card-head.data-v-137e1670 {
-  padding: 24rpx;
+  margin: 0 24rpx 0 24rpx;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
+  border-bottom: 2rpx solid #EEEEEE;
 }
 .cart-card-head > view.data-v-137e1670 {
   margin-left: 10rpx;
@@ -46,8 +49,16 @@
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: #222222;
+  line-height: 40rpx;
 }
 .cart-card-head > text.data-v-137e1670 {
   margin-left: 10rpx;
+}
+.cart-card-body.data-v-137e1670 {
+  padding: 0 24rpx 24rpx 24rpx;
+}
+.scale.data-v-137e1670 {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 

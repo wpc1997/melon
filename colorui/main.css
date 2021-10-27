@@ -318,6 +318,12 @@ radio.olive.checked .uni-radio-input {
 	border-color: #8dc63f !important;
 	color: #ffffff !important;
 }
+checkbox.olive-linear[checked] .wx-checkbox-input,
+checkbox.olive-linear.checked .uni-checkbox-input{
+	background-image: linear-gradient(45deg, #8dc63f, #F95B23);
+	border-color: #FFFFFF !important;
+	color: #ffffff !important;
+}
 
 switch.green[checked] .wx-switch-input,
 switch[checked] .wx-switch-input,

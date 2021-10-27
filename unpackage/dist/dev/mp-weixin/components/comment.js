@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/comment-list */ "components/comment-list").then((function () {return resolve(__webpack_require__(/*! @/components/comment-list.vue */ 446));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/comment-list */ "components/comment-list").then((function () {return resolve(__webpack_require__(/*! @/components/comment-list.vue */ 453));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

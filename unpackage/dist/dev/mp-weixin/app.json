@@ -87,5 +87,6 @@
     "cu-custom-title": "/colorui/components/cu-custom-title",
     "cu-custom-search": "/colorui/components/cu-custom-search",
     "cu-custom-animal": "/colorui/components/cu-custom-animal"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

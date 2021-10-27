@@ -130,7 +130,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cartCard = function cartCard() {__webpack_require__.e(/*! require.ensure | view/components/cart-card */ "view/components/cart-card").then((function () {return resolve(__webpack_require__(/*! ./components/cart-card.vue */ 517));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e) {throw _e;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e2) {didErr = true;err = _e2;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cartCard = function cartCard() {__webpack_require__.e(/*! require.ensure | view/components/cart-card */ "view/components/cart-card").then((function () {return resolve(__webpack_require__(/*! ./components/cart-card.vue */ 446));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,10 +176,246 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     cartCard: cartCard },
 
   data: function data() {
-    return {};
+    return {
+      CustomBar: this.CustomBar,
+      checkedAll: false,
+      buyList: [],
+      cartList: [{
+        id: 'a1',
+        storeName: '宠物医院',
+        storeId: 'aaa',
+        checked: false,
+        list: [{
+          id: 'b1',
+          goodsId: '111',
+          imgUrl: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          title: '农家老腊肉特级风干处理外焦里嫩肉味浓郁送亲人送朋友的',
+          grade: '农场盛宴2kg',
+          notice: '库存紧张,限购一件',
+          price: 18.5,
+          count: 1,
+          maxCount: 20,
+          minCount: 1,
+          checked: false }] },
 
 
-  } };exports.default = _default;
+      {
+        id: 'a2',
+        storeId: 'bbb',
+        storeName: 'pinn 宠物生活馆',
+        checked: false,
+        list: [{
+          id: 'b2',
+          goodsId: '222',
+          imgUrl: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          title: '农家老腊肉特级风干处理外焦里嫩肉味浓郁送亲人送朋友的农家老腊肉特级风干处理外焦里嫩肉味浓郁送亲人送朋友的',
+          grade: '农场盛宴2kg',
+          notice: '限购一件',
+          price: 25.9,
+          count: 1,
+          maxCount: 12,
+          minCount: 1,
+          checked: false },
+
+        {
+          id: 'b3',
+          goodsId: '333',
+          imgUrl: 'https://img01.yzcdn.cn/vant/cat.jpeg',
+          title: '渴望origin',
+          grade: '海洋盛宴2kg',
+          notice: '即将到期',
+          price: 230,
+          count: 1,
+          maxCount: 12,
+          minCount: 1,
+          checked: false }] }] };
+
+
+
+
+
+  },
+  computed: {
+
+    total: function total() {
+      if (this.buyList.length) {
+
+        var t = 0;
+        this.buyList.forEach(function (item, index) {
+          item.list.forEach(function (it, idx) {
+            t = t + it.count;
+          });
+        });
+        return t;
+
+      }
+      return this.buyList.length;
+    },
+
+    totalPrice: function totalPrice() {
+      var price = 0;
+      if (this.buyList.length) {
+
+        this.buyList.forEach(function (item, index) {
+          item.list.forEach(function (it, idx) {
+            price = price + it.count * it.price;
+          });
+        });
+        return price;
+
+      }
+
+      return price;
+
+    } },
+
+
+  methods: {
+
+
+
+
+
+
+    //checkbox选中店铺 index为店铺的索引 id为店铺的id
+    chooseStore: function chooseStore(index, id) {var _this = this;
+
+      this.cartList[index].checked = !this.cartList[index].checked;
+      this.cartList[index].list.forEach(function (it, idx) {
+        it.checked = _this.cartList[index].checked;
+      });
+
+      var idx = this.buyList.findIndex(function (t) {return t.storeId === _this.cartList[index].storeId;});
+
+      if (this.cartList[index].checked) {
+
+        this.buyList.push(_objectSpread({}, this.cartList[index]));
+
+      } else {
+
+        this.buyList.splice(idx, 1);
+
+      }
+
+      this.chooseAll();
+      console.log(id);
+    },
+
+    //checkbox选中商品 index为店铺的索引 id为商品的id
+    chooseItem: function chooseItem(index, ids) {var _this2 = this;
+
+      var buyListIdx = this.buyList.findIndex(function (t) {return t.storeId === _this2.cartList[index].storeId;});
+
+      var storeInfo = _objectSpread({},
+      this.cartList[index]);
+
+
+      storeInfo.list = [];
+
+      if (buyListIdx !== -1) {
+        this.buyList[buyListIdx].list = [];
+      } else {
+        this.buyList.push(storeInfo);
+        buyListIdx = this.buyList.length - 1;
+      }
+
+      console.log(this.buyList);
+      console.log(this.cartList[index]);
+
+      this.cartList[index].list.forEach(function (it, idx) {
+
+        if (ids.find(function (t) {return t === it.goodsId;})) {
+
+          _this2.buyList[buyListIdx].list.push(_objectSpread({}, it));
+
+          it.checked = true;
+
+
+
+        } else {
+
+          it.checked = false;
+
+        }
+      });
+
+
+
+      var storeCheckedAll = true; //当前商品所在的店铺的商品是否全部选择，默认true
+      var _iterator = _createForOfIteratorHelper(
+
+      this.cartList[index].list),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var item = _step.value;
+          if (!item.checked) {
+            storeCheckedAll = false;
+          }
+        }} catch (err) {_iterator.e(err);} finally {_iterator.f();}
+
+      this.cartList[index].checked = storeCheckedAll;
+
+      this.chooseAll();
+    },
+
+
+    //判断是否全部选中
+    chooseAll: function chooseAll() {var _iterator2 = _createForOfIteratorHelper(
+      this.cartList),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var item = _step2.value;
+          if (!item.checked) {
+            this.checkedAll = false;
+            return;
+          }var _iterator3 = _createForOfIteratorHelper(
+          item.list),_step3;try {for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {var it = _step3.value;
+              if (!it.checked) {
+                this.checkedAll = false;
+                return;
+              }
+            }} catch (err) {_iterator3.e(err);} finally {_iterator3.f();}
+        }} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}
+
+      this.buyList = this.cartList.slice(0);
+
+      this.checkedAll = true;
+    },
+
+    //手动选中所有商品、店铺
+    chooseAllStore: function chooseAllStore() {
+
+      if (this.checkedAll) {var _iterator4 = _createForOfIteratorHelper(
+        this.cartList),_step4;try {for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {var item = _step4.value;
+            item.checked = false;var _iterator5 = _createForOfIteratorHelper(
+            item.list),_step5;try {for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {var it = _step5.value;
+                it.checked = false;
+              }} catch (err) {_iterator5.e(err);} finally {_iterator5.f();}
+          }} catch (err) {_iterator4.e(err);} finally {_iterator4.f();}
+
+        this.buyList = [];
+
+      } else {var _iterator6 = _createForOfIteratorHelper(
+        this.cartList),_step6;try {for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {var _item = _step6.value;
+            _item.checked = true;var _iterator7 = _createForOfIteratorHelper(
+            _item.list),_step7;try {for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {var _it = _step7.value;
+                _it.checked = true;
+              }} catch (err) {_iterator7.e(err);} finally {_iterator7.f();}
+          }} catch (err) {_iterator6.e(err);} finally {_iterator6.f();}
+
+        this.buyList = this.cartList;
+      }
+
+
+
+      this.checkedAll = !this.checkedAll;
+    },
+
+    //增加购买数量 参数：index为店铺的索引，idx为店铺下面商品的索引，item为商品的信息
+    add: function add(index, idx, item) {
+      console.log(index, idx, item);
+      this.cartList[index].list[idx].count++;
+    },
+
+    //减少购买数量 参数：index为店铺的索引，idx为店铺下面商品的索引，item为商品的信息
+    subtract: function subtract(index, idx, item) {
+      console.log(index, idx, item);
+      this.cartList[index].list[idx].count--;
+    } } };exports.default = _default;
 
 /***/ }),
 

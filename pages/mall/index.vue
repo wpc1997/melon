@@ -960,7 +960,7 @@
 	.tower-swiper .tower-item {
 		width: 600upx !important;
 		height: 325upx !important;
-		left: 203rpx;
+		left: 203upx;
 		// left: 35%;
 	}
 
